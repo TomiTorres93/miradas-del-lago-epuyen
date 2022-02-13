@@ -1,0 +1,135 @@
+@import '../funciones/mixins';
+@import '../funciones/list';
+
+*{
+    padding: 0;
+    margin: 0;
+
+    ::-webkit-scrollbar {
+        width: 10px;
+     }
+
+    ::-webkit-scrollbar-thumb {
+        background: nth($color, 3);
+        border-radius: 8px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        box-shadow: rgb(238 234 244) 0px 0px 5px inset;
+        border-radius: 10px;
+    }
+
+}
+
+body {
+    line-height: 1.55;
+    width: 100%;
+    margin: 0px auto;
+}
+
+nav {
+    text-align: center;
+}
+
+// SECCIONES 
+
+.section {
+    height: fit-content;
+    padding: 3rem 10rem; 
+    text-align: center;
+}
+
+
+// TEXTOS
+
+.titulos {
+    color: nth($color, 4);
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+// SECCION LA HOSTERIA
+
+.lahosteria-text {
+    font-size: 1.5rem;
+    padding: 5rem 5rem;
+}
+.img-lahosteria-cont {
+text-align: center;
+
+}
+
+
+
+.img-lahosteria {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 100rem;
+    margin: 2rem 1rem;
+    object-fit: cover;
+}
+// NAVEGADOR
+
+.navegador {
+    @extend %flexbox-row;
+    text-align: center;
+    position: fixed;
+    top: 5rem;
+    left: 2rem;
+    width: 1.5rem;
+    height: 15rem;
+    padding: 0.2rem;
+    border-radius: 15px;
+    transition: 0.5s all;
+    z-index: 100;
+
+  
+}
+.cirinactive {
+    opacity: 50%;
+}
+
+.menucirc {
+    color: nth($color, 3);
+    margin: 0.1rem;
+    cursor: pointer;
+    transition: 0.2s all;
+    display: block;
+    height: 1rem;
+    font-size: 0.9rem;
+
+    &:hover {
+        opacity: 100%;
+        color: nth($color, 2);
+        font-size: 1rem;
+
+    }
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+nav a[title]:hover::after {
+    content: attr(title);
+    width: 10rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    transition: 0.5s all;
+    background-color: nth($color, 2);
+    color: white;
+    position: absolute;
+    left: 2rem;
+    padding: 0.2rem;
+    border-radius: 10px;
+  }
+
+  .navegador-text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.7rem;
+    color: nth($color, 3);
+    font-weight: 600;
+    writing-mode: vertical-rl;
+    text-orientation:upright;
+}

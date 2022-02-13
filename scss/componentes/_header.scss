@@ -1,0 +1,25 @@
+
+
+header {
+    height: 750px;
+    width: 100%;
+    @extend %flexbox-column;
+    background-image: url('../images/portada-white.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.logo-portada {
+    width: 25rem;
+    margin-top: 7rem;
+    
+}
+
+.whatsapp-button {
+    padding: 1rem;
+    background-color: nth($color, 4);
+    color: white;
+    font-weight: 600;
+
+}

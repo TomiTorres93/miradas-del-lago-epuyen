@@ -1,0 +1,19 @@
+{
+  "name": "miradas-del-lago",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomiTorres93/miradas-del-lago-epuyen.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TomiTorres93/miradas-del-lago-epuyen/issues"
+  },
+  "homepage": "https://github.com/TomiTorres93/miradas-del-lago-epuyen#readme"
+}
