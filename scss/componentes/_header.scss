@@ -17,9 +17,19 @@ header {
 }
 
 .whatsapp-button {
-    padding: 1rem;
-    background-color: nth($color, 4);
-    color: white;
-    font-weight: 600;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    padding: 0.5rem;
+    color: black;
+    border-radius: 10px;
+    font-weight: 800;
+    transition: all 0.5s;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
 
+    &:hover {
+        background-color: nth($color, 4);
+        color: white;
+    }
 }

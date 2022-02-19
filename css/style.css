@@ -64,10 +64,20 @@ header {
 }
 
 .whatsapp-button {
-  padding: 1rem;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  padding: 0.5rem;
+  color: black;
+  border-radius: 10px;
+  font-weight: 800;
+  transition: all 0.5s;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+.whatsapp-button:hover {
   background-color: #aac750;
   color: white;
-  font-weight: 600;
 }
 
 /* MIXINS */
@@ -115,6 +125,7 @@ body {
   line-height: 1.55;
   width: 100%;
   margin: 0px auto;
+  font-family: "Montserrat", sans-serif;
 }
 
 nav {
@@ -127,27 +138,113 @@ nav {
   text-align: center;
 }
 
+.green {
+  background-color: #aac750;
+}
+
 .titulos {
   color: #aac750;
   font-size: 4rem;
-  font-weight: 700;
+  font-weight: 100;
+  font-family: "Montserrat", sans-serif;
 }
 
 .lahosteria-text {
   font-size: 1.5rem;
   padding: 5rem 5rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 .img-lahosteria-cont {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .img-lahosteria {
-  width: 20rem;
-  height: 20rem;
-  border-radius: 100rem;
-  margin: 2rem 1rem;
+  width: 40rem;
+  height: 30rem;
+  margin: 2rem 0rem;
+  border-radius: 25px;
   object-fit: cover;
+  cursor: pointer;
+  filter: drop-shadow(5px 5px 10px #c5c5c5);
+  transition: 0.5s ease-in-out;
+}
+
+.img-inact {
+  width: 4rem;
+  height: 30rem;
+  border-radius: 20px;
+  filter: grayscale(0.8);
+}
+.img-inact:hover {
+  width: 4.5rem;
+  filter: grayscale(0);
+}
+
+.text-img-lahosteria-position {
+  position: relative;
+  top: 30rem;
+  left: 2rem;
+  z-index: 100;
+  text-align: left;
+}
+
+.text-img-lahosteria {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+}
+
+.text-img-lahosteria-description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: white;
+}
+
+.img-logo-lahosteria {
+  width: 4rem;
+  position: relative;
+  top: 12rem;
+  left: 7rem;
+  z-index: 100;
+  transition: all 0.5s;
+  filter: invert(100%);
+}
+
+.img-logo-lh-inact {
+  width: 2.5rem;
+  position: relative;
+  top: 12rem;
+  left: 3.5rem;
+  z-index: 100;
+  transition: all 0.5s;
+  filter: invert(100%);
+}
+
+.section-restaurant {
+  background-image: url("../images/restaurant.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.estrella {
+  width: 2rem;
+  margin: 0.5rem;
+}
+
+.puntaje-text {
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  border-radius: 10px;
+  background-color: #aac750;
+  font-family: "Montserrat", sans-serif;
 }
 
 .navegador {
@@ -161,6 +258,10 @@ nav {
   border-radius: 15px;
   transition: 0.5s all;
   z-index: 100;
+  opacity: 30%;
+}
+.navegador:hover {
+  opacity: 100%;
 }
 
 .cirinactive {
@@ -168,7 +269,7 @@ nav {
 }
 
 .menucirc {
-  color: #0094dc;
+  color: #aac750;
   margin: 0.1rem;
   cursor: pointer;
   transition: 0.2s all;
@@ -205,10 +306,25 @@ nav a[title]:hover::after {
 .navegador-text {
   font-family: "Raleway", sans-serif;
   font-size: 0.7rem;
-  color: #0094dc;
+  color: #aac750;
   font-weight: 600;
   writing-mode: vertical-rl;
   text-orientation: upright;
+}
+
+.logowhatsapp {
+  width: 1.2rem;
+}
+
+.fadegreen {
+  transition: 0.5s all;
+}
+.fadegreen:hover {
+  color: white;
+  background-color: #aac750;
+  font-weight: 500;
+  padding: 0rem 2rem;
+  border-radius: 10px;
 }
 
 /* MIXINS */
@@ -231,7 +347,7 @@ nav a[title]:hover::after {
   flex-wrap: wrap;
 }
 
-header {
+header, .columna, .puntaje-host-cont {
   display: flex;
   align-items: center;
   flex-direction: column;
