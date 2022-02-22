@@ -156,10 +156,11 @@ nav {
 }
 
 .img-lahosteria-cont {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .img-lahosteria {
@@ -207,16 +208,6 @@ nav {
 }
 
 .img-logo-lahosteria {
-  width: 4rem;
-  position: relative;
-  top: 12rem;
-  left: 7rem;
-  z-index: 100;
-  transition: all 0.5s;
-  filter: invert(100%);
-}
-
-.img-logo-lh-inact {
   width: 2.5rem;
   position: relative;
   top: 12rem;
@@ -248,39 +239,61 @@ nav {
 }
 
 .navegador {
-  text-align: center;
   position: fixed;
-  top: 5rem;
-  left: 2rem;
-  width: 1.5rem;
-  height: 15rem;
-  padding: 0.2rem;
-  border-radius: 15px;
-  transition: 0.5s all;
+  transition: 1s all;
+  background: #3f3f3f;
+  width: 4.5rem;
+  height: 100%;
+  padding: 0.3rem;
   z-index: 100;
-  opacity: 30%;
-}
-.navegador:hover {
-  opacity: 100%;
 }
 
-.cirinactive {
-  opacity: 50%;
+.extrawidthnav {
+  width: 20rem;
+  box-shadow: 5px 0px #02aeee;
 }
 
-.menucirc {
-  color: #aac750;
-  margin: 0.1rem;
+.menuiconcont {
+  padding: 0 0 0 0.5rem;
+}
+
+.menutext {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  margin-left: 2rem;
+  font-weight: 800;
+  color: white;
+  display: none;
+  padding: 0.2rem;
+}
+
+.menutextcont {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  flex-wrap: wrap;
+}
+
+.menuicon {
+  width: 2.6rem;
+  margin-bottom: 1rem;
+  transition: all 0.5s;
   cursor: pointer;
-  transition: 0.2s all;
-  display: block;
-  height: 1rem;
-  font-size: 0.9rem;
 }
-.menucirc:hover {
-  opacity: 100%;
-  color: #02aeee;
-  font-size: 1rem;
+
+.show {
+  transition: all 1s;
+  display: block;
+}
+
+.menuiconlogo {
+  width: 3rem;
+  margin-bottom: 1rem;
+  transition: all 0.5s;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  left: 0.8rem;
 }
 
 nav a {
@@ -288,7 +301,7 @@ nav a {
   color: white;
 }
 
-nav a[title]:hover::after {
+nav div img[title]:hover::after {
   content: attr(title);
   width: 10rem;
   font-family: "Raleway", sans-serif;
@@ -306,7 +319,7 @@ nav a[title]:hover::after {
 .navegador-text {
   font-family: "Raleway", sans-serif;
   font-size: 0.7rem;
-  color: #aac750;
+  color: white;
   font-weight: 600;
   writing-mode: vertical-rl;
   text-orientation: upright;
@@ -340,14 +353,14 @@ nav a[title]:hover::after {
   flex-wrap: wrap;
 }
 
-.navegador {
+.navegador, .menuiconcont {
   display: flex;
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
 }
 
-header, .columna, .puntaje-host-cont {
+header, .columna, .puntaje-host-cont, .logoscont, .textcont {
   display: flex;
   align-items: center;
   flex-direction: column;

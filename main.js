@@ -167,3 +167,94 @@ console.log(galeria5check)
        galeria1.classList.add('img-inact');
    }
 })
+
+
+
+
+////////// MENU
+
+const menuhotel = document.querySelector('#menuhotel')
+const menunav = document.querySelector('#menunav')
+const menutext1 = document.querySelector('#menutext1')
+const menutext2 = document.querySelector('#menutext2')
+const menutext3 = document.querySelector('#menutext3')
+const menutext4 = document.querySelector('#menutext4')
+const menutext5 = document.querySelector('#menutext5')
+const menutext6 = document.querySelector('#menutext6')
+const menutext7 = document.querySelector('#menutext7')
+
+
+var width = $("#menunav").width()
+
+console.log(width)
+
+menuhotel.addEventListener('click', function () {  
+    menunav.classList.toggle('extrawidthnav');
+
+    var width2 = $("#menunav").width()
+
+    if (width2 >= 300) {
+        $("#menutext1").fadeOut(30)
+        $("#menutext2").fadeOut(30)
+        $("#menutext3").fadeOut(30)
+        $("#menutext4").fadeOut(30)
+        $("#menutext5").fadeOut(30)
+        $("#menutext6").fadeOut(30)
+        $("#menutext7").fadeOut(30)  
+    }      
+    console.log(width2)
+    setTimeout(function() { 
+        var width = $("#menunav").width()
+    
+        console.log(width)
+
+
+
+    
+setTimeout(function() { 
+    if (width >= 260) {
+            $("#menutext1").fadeIn(300)
+            $("#menutext2").fadeIn(300)
+            $("#menutext3").fadeIn(300)
+            $("#menutext4").fadeIn(300)
+            $("#menutext5").fadeIn(300)
+            $("#menutext6").fadeIn(300)
+            $("#menutext7").fadeIn(300)
+
+                            }},100)
+
+}, 600)
+
+
+
+
+                            
+
+
+
+})
+
+
+
+
+
+
+
+
+
+
+
+// setTimeout(function() {        
+//     menutext1.classList.toggle('show')}, 500)
+//     setTimeout(function() {        
+//     menutext2.classList.toggle('show')}, 500)
+//     setTimeout(function() {        
+//     menutext3.classList.toggle('show')}, 500)
+//     setTimeout(function() {        
+//     menutext4.classList.toggle('show')}, 500)
+//     setTimeout(function() {        
+//     menutext5.classList.toggle('show')}, 500)
+//     setTimeout(function() {        
+//     menutext6.classList.toggle('show')}, 500) 
+//     setTimeout(function() {        
+//     menutext7.classList.toggle('show')}, 500)                                                             
