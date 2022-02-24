@@ -174,7 +174,16 @@ console.log(galeria5check)
 ////////// MENU
 
 const menuhotel = document.querySelector('#menuhotel')
+const menuepuyen = document.querySelector('#menuepuyen')
+const menuhabitaciones = document.querySelector('#menuhabitaciones')
+const menurestaurant = document.querySelector('#menurestaurant')
+const menulago = document.querySelector('#menulago')
+const menuhosteria = document.querySelector('#menuhosteria')
+const menutrip = document.querySelector('#menutrip')
+
+
 const menunav = document.querySelector('#menunav')
+
 const menutext1 = document.querySelector('#menutext1')
 const menutext2 = document.querySelector('#menutext2')
 const menutext3 = document.querySelector('#menutext3')
@@ -186,75 +195,92 @@ const menutext7 = document.querySelector('#menutext7')
 
 var width = $("#menunav").width()
 
-console.log(width)
-
-menuhotel.addEventListener('click', function () {  
-    menunav.classList.toggle('extrawidthnav');
-
-    var width2 = $("#menunav").width()
-
-    if (width2 >= 300) {
-        $("#menutext1").fadeOut(30)
-        $("#menutext2").fadeOut(30)
-        $("#menutext3").fadeOut(30)
-        $("#menutext4").fadeOut(30)
-        $("#menutext5").fadeOut(30)
-        $("#menutext6").fadeOut(30)
-        $("#menutext7").fadeOut(30)  
-    }      
-    console.log(width2)
-    setTimeout(function() { 
+function navaction (a) {
+    a.addEventListener('click', function () {  
+        menunav.classList.toggle('extrawidthnav');
+        
+            var width2 = $("#menunav").width()
+        
+            if (width2 >= 300) {
+                $("#menutext1").fadeOut(30)
+                $("#menutext2").fadeOut(30)
+                $("#menutext3").fadeOut(30)
+                $("#menutext4").fadeOut(30)
+                $("#menutext5").fadeOut(30)
+                $("#menutext6").fadeOut(30)
+                $("#menutext7").fadeOut(30)  
+            }      
+        setTimeout(function() { 
+        
         var width = $("#menunav").width()
-    
         console.log(width)
+            
+            setTimeout(function() { 
+                if (width >= 260) {
+                    $("#menutext1").fadeIn(300)
+                    $("#menutext2").fadeIn(300)
+                    $("#menutext3").fadeIn(300)
+                    $("#menutext4").fadeIn(300)
+                    $("#menutext5").fadeIn(300)
+                    $("#menutext6").fadeIn(300)
+                    $("#menutext7").fadeIn(300)
+            }},100)
+        }, 600)                     
+        
+        })
+}
+
+
+let navbutton1 = navaction(menuhotel)
+let navbutton2 = navaction(menuepuyen)
+let navbutton3 = navaction(menuhabitaciones)
+let navbutton4 = navaction(menurestaurant)
+let navbutton5 = navaction(menulago)
+let navbutton6 = navaction(menuhosteria)
+let navbutton7 = navaction(menutrip)
 
 
 
-    
-setTimeout(function() { 
-    if (width >= 260) {
-            $("#menutext1").fadeIn(300)
-            $("#menutext2").fadeIn(300)
-            $("#menutext3").fadeIn(300)
-            $("#menutext4").fadeIn(300)
-            $("#menutext5").fadeIn(300)
-            $("#menutext6").fadeIn(300)
-            $("#menutext7").fadeIn(300)
+/// LEER MAS EPUYEN
 
-                            }},100)
 
-}, 600)
+const parrafoepuyen1 = document.querySelector('#parrafoepuyen1')
+const parrafoepuyen2 = document.querySelector('#parrafoepuyen2')
+const leermasepuyen = document.querySelector('#leermasepuyen')
+const leermenosepuyen = document.querySelector('#leermenosepuyen')
 
 
 
+leermasepuyen.addEventListener('click', function () {
 
-                            
 
+    setTimeout(function() { 
 
+        $("#parrafoepuyen1").fadeIn(300)
+        $("#parrafoepuyen2").fadeIn(300)    
+        
+        parrafoepuyen1.classList.remove('hide');
+        parrafoepuyen2.classList.remove('hide');
+        leermasepuyen.classList.add('hide');
+        leermenosepuyen.classList.remove('hide');
+    },100)
 
 })
 
 
+leermenosepuyen.addEventListener('click', function () {
 
 
+    setTimeout(function() { 
 
+        $("#parrafoepuyen1").fadeOut(300)
+        $("#parrafoepuyen2").fadeOut(300)    
+        
+     
+        leermenosepuyen.classList.add('hide');
+        leermasepuyen.classList.remove('hide');
 
+    },100)
 
+})
 
-
-
-
-// setTimeout(function() {        
-//     menutext1.classList.toggle('show')}, 500)
-//     setTimeout(function() {        
-//     menutext2.classList.toggle('show')}, 500)
-//     setTimeout(function() {        
-//     menutext3.classList.toggle('show')}, 500)
-//     setTimeout(function() {        
-//     menutext4.classList.toggle('show')}, 500)
-//     setTimeout(function() {        
-//     menutext5.classList.toggle('show')}, 500)
-//     setTimeout(function() {        
-//     menutext6.classList.toggle('show')}, 500) 
-//     setTimeout(function() {        
-//     menutext7.classList.toggle('show')}, 500)                                                             

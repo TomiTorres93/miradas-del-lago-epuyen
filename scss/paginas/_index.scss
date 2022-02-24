@@ -42,18 +42,24 @@ nav {
 
 }
 
-.green {
-    background-color: nth($color, 4);
+.fondoverde {
+    background-color: nth($color, 6);
+}
+
+.fondoazul {
+    background-color: nth($color, 5);
 }
 
 .columna {
     @extend %flexbox-column; 
 }
 
+
+
 // TEXTOS
 
 .titulos {
-    color: nth($color, 4);
+    color: nth($color, 7);
     font-size: 4rem;
     font-weight: 100;
     font-family: 'Montserrat', sans-serif;
@@ -62,11 +68,10 @@ nav {
 
 // SECCION LA HOSTERIA
 
-.lahosteria-text {
+.parrafos {
     font-size: 1.5rem;
-    padding: 5rem 5rem;
+    padding: 4rem 8rem;
     font-family: 'Montserrat', sans-serif;
-
 }
 
 .img-lahosteria-cont {
@@ -185,7 +190,7 @@ color: white;
     width: 4.5rem;
     height: 100%;
     padding: 0.3rem;
-    z-index: 100;
+    z-index: 200;
 
 }
 
@@ -205,15 +210,26 @@ color: white;
 
 .textcont {
     @extend %flexbox-column;
+    
 }
 .menutext {
+    text-decoration: none;
     font-family: 'Raleway', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-left: 2rem;
-    font-weight: 800;
+    font-weight: 300;
     color: white;
     display: none;
-    padding: 0.2rem;
+    padding: 0.3rem;
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+    cursor: pointer;
+
+    &:hover {
+        filter: invert(50%) sepia(24%) saturate(7404%) hue-rotate(171deg) brightness(91%) contrast(103%);
+
+    }
 }
 
 .menutextcont {
@@ -228,13 +244,22 @@ color: white;
     margin-bottom: 1rem;
     transition: all 0.5s;
     cursor: pointer;
+
+    &:hover {
+        filter: invert(50%) sepia(24%) saturate(7404%) hue-rotate(171deg) brightness(91%) contrast(103%);
+
+    }
 }
 
-.show {
-    transition: all 1s;
-    display: block;
+.menuicontrip {
+    width: 2.6rem;
+    margin-bottom: 1rem;
+    transition: all 0.5s;
+    cursor: pointer;
 
 }
+
+
 
 .menuiconlogo {
     width: 3rem;
@@ -277,6 +302,85 @@ nav div img[title]:hover::after {
     text-orientation:upright;
 }
 
+.estrellas {
+    font-size: 0.8rem;
+    position: relative;
+    left: 0.5rem;
+    bottom: 0.1rem;
+    color: gold;
+
+    animation: estrellacolor 8s infinite;
+    animation-name: estrellacolor;
+
+    @keyframes estrellacolor {
+
+        0% {
+            color: gold;
+            position: relative;
+            bottom: 0.3rem;
+        }
+
+        10% {
+            color:goldenrod;
+            position: relative;
+            bottom: 0.1rem;
+       }
+
+        20% {
+            color: gold;
+            position: relative;
+            bottom: 0.3rem;
+            
+               }
+
+        30% {
+            color: goldenrod;
+            position: relative;
+            bottom: 0.1rem;
+       }
+
+        40% {
+            color: gold;
+            position: relative;
+            bottom: 0.3rem;
+        }
+
+        50% {
+            color: goldenrod;
+            position: relative;
+            bottom: 0.1rem;
+       }
+        
+        60% {
+            color: gold;
+            position: relative;
+            bottom: 0.3rem;
+        }
+
+        70% {
+            color: goldenrod;
+            position: relative;
+            bottom: 0.1rem;
+       }
+
+        80% {
+            color: gold;
+            position: relative;
+            bottom: 0.3rem;
+        }
+
+        90% {
+            color: goldenrod;
+            position: relative;
+            bottom: 0.1rem;
+       }
+        
+        100% {
+            color: gold;
+            position: relative;
+            bottom: 0.3rem;
+        }
+}}
 
 
 
@@ -296,7 +400,7 @@ nav div img[title]:hover::after {
 
     &:hover {
         color: white;
-        background-color: nth($color, 4);
+        background-color: nth($color, 7);
         font-weight: 500;
         padding: 0rem 2rem;
         border-radius: 10px;
@@ -306,12 +410,53 @@ nav div img[title]:hover::after {
 
 
 
+// SECCION LAGO
+
+.imggrande {
+    width: 100%;
+    border-radius: 25px;
+    transition: all 0.5s;
+    margin: 2rem 0rem;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+
+    filter: grayscale(0.8);
+
+    &:hover {
+        filter: grayscale(0);    
+    }
+
+}
 
 
 
+// COLORES DE TEXTO
+
+.blanco {
+    color: white;
+}
+
+.backverde {
+background-color: #5bad76;
+}
 
 
+.leermas {
+    font-size: 4rem;
+    color: white;
+    cursor: pointer;
+}
 
 
+.hide {
+    transition: all 1s;
+    display: none;
+}
+
+.show {
+    transition: all 1s;
+    display: block;
+}
 
 
