@@ -99,6 +99,21 @@ nav {
 
 }
 
+.img-habitaciones {
+    width: 40rem;
+    height: 30rem;
+    margin: 2rem 1rem;
+    border-radius: 25px;
+    object-fit: cover;
+    cursor: pointer;
+
+    filter: drop-shadow(5px 5px 10px rgb(197, 197, 197));
+
+    transition: 0.5s ease-in-out;
+
+
+}
+
 .img-inact {
     width: 4rem;
     height: 30rem;
