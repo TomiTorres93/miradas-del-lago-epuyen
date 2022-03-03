@@ -584,3 +584,55 @@ background-color: #5bad76;
 
     filter: invert(100%);
 }
+
+
+//////// SECCIÓN RESTAURANTE
+
+.gridimg {
+    width: 60%;
+    height: 20rem;
+    object-fit: cover;
+    margin: 0.1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-radius: 15px;
+
+    filter: grayscale(0.8);
+
+    &:hover {
+        filter: grayscale(0);  
+        border: solid 1.5px nth($color, 2);
+  
+    }
+}
+
+.gridimg2 {
+    width: 30%;
+    height: 20rem;
+    object-fit: cover;
+    margin: 0.1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-radius: 15px;
+
+    filter: grayscale(0.8);
+
+    &:hover {
+        filter: grayscale(0);    
+    }
+
+}
+
+.rest-img-cont {
+    @extend %flexbox-row;
+    justify-content: center;
+
+}
+
+
+.backgris {
+    background: rgb(43, 43, 43);
+}
+  
+
+  

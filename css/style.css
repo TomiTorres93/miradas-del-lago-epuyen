@@ -566,6 +566,43 @@ nav div img[title]:hover::after {
   filter: invert(100%);
 }
 
+.gridimg {
+  width: 60%;
+  height: 20rem;
+  object-fit: cover;
+  margin: 0.1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-radius: 15px;
+  filter: grayscale(0.8);
+}
+.gridimg:hover {
+  filter: grayscale(0);
+  border: solid 1.5px #02aeee;
+}
+
+.gridimg2 {
+  width: 30%;
+  height: 20rem;
+  object-fit: cover;
+  margin: 0.1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-radius: 15px;
+  filter: grayscale(0.8);
+}
+.gridimg2:hover {
+  filter: grayscale(0);
+}
+
+.rest-img-cont {
+  justify-content: center;
+}
+
+.backgris {
+  background: #2b2b2b;
+}
+
 /* MIXINS */
 /*USADOS PARA LAS CLASS: DETACADO Y TITULOS*/
 /*USADOS PARA LAS CLASS: PARRAFOS Y GLOSARIO-TEXTO*/
@@ -579,7 +616,7 @@ nav div img[title]:hover::after {
   flex-wrap: wrap;
 }
 
-.navegador, .menuiconcont, .sectionwa-subtit-cont, .ff-ing-sal {
+.navegador, .menuiconcont, .sectionwa-subtit-cont, .ff-ing-sal, .rest-img-cont {
   display: flex;
   flex-direction: row;
   align-items: center;
