@@ -136,6 +136,7 @@ nav {
   height: fit-content;
   padding: 3rem 10rem;
   text-align: center;
+  justify-content: center;
 }
 
 .fondoverde {
@@ -473,6 +474,98 @@ nav div img[title]:hover::after {
   display: block;
 }
 
+.sectionwa-subtit-cont {
+  justify-content: center;
+}
+
+.input {
+  width: 20%;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #5bad76;
+  border: none;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+.input::placeholder {
+  color: #c2c2c2;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+
+.wadestacado {
+  width: 5rem;
+  padding: 0.2rem;
+  margin: 1rem;
+  background-color: #5bad76;
+  font-size: 1rem;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+
+.watexto {
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  padding: 0.5rem;
+  line-height: 2rem;
+}
+
+.wabotonmensaje {
+  width: 10rem;
+  padding: 1rem;
+  margin: 3rem 1rem 1rem 1rem;
+  background-color: #5bad76;
+  font-size: 1rem;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.5s;
+  border: none;
+}
+.wabotonmensaje:hover {
+  background-color: #447e57;
+}
+
+.ff-ing-sal {
+  justify-content: center;
+}
+
+.ff-ing-sal-text {
+  position: relative;
+  bottom: 0.5rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  color: #5bad76;
+}
+
+.input-ff {
+  width: 20%;
+  padding: 0.2rem;
+  margin: 0rem 1rem;
+  position: relative;
+  bottom: 1rem;
+  background-color: #447e57;
+  border: none;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  font-size: 0.6rem;
+}
+
+.wasendlogo {
+  width: 1.5rem;
+  z-index: 100;
+  transition: all 0.5s;
+  filter: invert(100%);
+}
+
 /* MIXINS */
 /*USADOS PARA LAS CLASS: DETACADO Y TITULOS*/
 /*USADOS PARA LAS CLASS: PARRAFOS Y GLOSARIO-TEXTO*/
@@ -486,7 +579,7 @@ nav div img[title]:hover::after {
   flex-wrap: wrap;
 }
 
-.navegador, .menuiconcont {
+.navegador, .menuiconcont, .sectionwa-subtit-cont, .ff-ing-sal {
   display: flex;
   flex-direction: row;
   align-items: center;

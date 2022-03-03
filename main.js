@@ -284,3 +284,162 @@ leermenosepuyen.addEventListener('click', function () {
 
 })
 
+
+
+  
+
+
+
+
+/// WHATSAPP 
+
+
+// const wainputnombre = document.querySelector('#wainputnombre')
+const nombre = document.querySelector('#nombre')
+const fechaentrada = document.querySelector('#fechaentrada')
+const fechasalida = document.querySelector('#fechasalida')
+const huespedes = document.querySelector('#huespedes')
+
+const wanombre = document.querySelector('#wanombre')
+const wafechaing = document.querySelector('#wafechaing')
+const wafechasal = document.querySelector('#wafechasal')
+const wacantidad = document.querySelector('#wacantidad')
+
+
+
+let form = document.getElementById('form');
+
+form.addEventListener("input", function(e) {
+    e.preventDefault();
+
+      nombre.addEventListener('input', () => {
+        wanombre.setAttribute('data-text', nombre.value)
+
+        wanombre.innerHTML = wanombre.getAttribute('data-text')
+
+    if ((nombre.value).length === 0) {
+        wanombre.innerHTML = 'Empty'
+    }
+
+    })
+
+    // FECHA ENTRADA
+    fechaentrada.addEventListener('input', () => {
+        wafechaing.setAttribute('data-text', fechaentrada.value)
+
+        wafechaing.innerHTML = wafechaing.getAttribute('data-text')
+
+    if ((fechaentrada.value).length === 0) {
+        wafechaing.innerHTML = 'Empty'
+    }
+
+    })
+
+    // FECHA SALIDA
+
+        
+    fechasalida.addEventListener('input', () => {
+        wafechasal.setAttribute('data-text', fechasalida.value)
+
+        wafechasal.innerHTML = wafechasal.getAttribute('data-text')
+
+    if ((fechasalida.value).length === 0) {
+        wafechasal.innerHTML = 'Empty'
+    }
+
+    })
+
+    //HUESPEDES
+
+        
+    huespedes.addEventListener('input', () => {
+        wacantidad.setAttribute('data-text', huespedes.value)
+
+        wacantidad.innerHTML = wacantidad.getAttribute('data-text')
+
+    if ((huespedes.value).length === 0) {
+        wacantidad.innerHTML = 'Empty'
+    }
+
+    })
+
+
+})
+
+
+
+// ARCHIVAR SOLICITUDES
+
+let nuevasSolicitudes =  []
+
+ 
+
+const enviarmensaje = document.querySelector('#enviarmensaje')
+
+enviarmensaje.addEventListener('click', () => {
+
+
+
+    let nuevaSolicitud = {
+        nombre: nombre.value,
+        fechaentrada: fechaentrada.value,
+        fechasalida: fechasalida.value,
+        huespedes: huespedes.value,
+    };
+
+    form.reset();
+
+    localStorage.setItem("nuevasSolicitudes", JSON.stringify(nuevaSolicitud));
+
+    nuevasSolicitudes.push(nuevaSolicitud); 
+
+    localStorage.setItem("nuevaSolicitud", JSON.stringify(nuevasSolicitudes));
+
+console.log(nuevasSolicitudes)
+
+
+
+
+let whatsappmessage =  "https://wa.me/+5491162473003?text=¡Hola!+Mi+nombre+es+" + `${nuevaSolicitud.nombre}` + ".+Quería+saber+si+tenían+habitación+disponible+para+la+fecha+" + `${nuevaSolicitud.fechaentrada}` + "+hasta+la+fecha+" + `${nuevaSolicitud.fechasalida}` + ".+ Somos+" + `${nuevaSolicitud.huespedes}` + "+personas.+¡Muchas+gracias!+";
+
+console.log(whatsappmessage)
+
+window.location.replace(whatsappmessage)
+
+})
+
+
+
+
+
+
+
+///////////////////////////////////////////
+///// MOUSEROVER BOTON DE WHATSAPP/////////
+//PASA EL MOUSE POR ENCIMA Y SE CAMBIA DE TEXTO A LOGO DE ENVIAR///
+
+
+
+const enviartext = document.querySelector("#enviartext")
+const wasendlogo = document.querySelector("#wasendlogo")
+
+
+enviarmensaje.addEventListener('click', () => {
+
+
+    setTimeout(function() { 
+
+        $("#enviartext").fadeOut(50)
+        $("#wasendlogo").fadeIn(500)    
+        
+        enviartext.classList.add('hide');
+        wasendlogo.classList.remove('hide');
+    },100)
+
+
+
+
+    
+
+
+})
