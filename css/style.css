@@ -74,9 +74,10 @@ header {
   transition: all 0.5s;
   font-family: "Montserrat", sans-serif;
   cursor: pointer;
+  text-decoration: none;
 }
 .whatsapp-button:hover {
-  background-color: #aac750;
+  background-color: #447e57;
   color: white;
 }
 
@@ -197,7 +198,6 @@ nav {
   filter: grayscale(0.8);
 }
 .img-inact:hover {
-  width: 4.5rem;
   filter: grayscale(0);
 }
 
@@ -593,6 +593,7 @@ nav div img[title]:hover::after {
 }
 .gridimg2:hover {
   filter: grayscale(0);
+  border: solid 1.5px #02aeee;
 }
 
 .rest-img-cont {

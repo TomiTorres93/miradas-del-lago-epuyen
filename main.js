@@ -400,7 +400,7 @@ console.log(nuevasSolicitudes)
 
 
 
-let whatsappmessage =  "https://wa.me/+5491162473003?text=¡Hola!+Mi+nombre+es+" + `${nuevaSolicitud.nombre}` + ".+Quería+saber+si+tenían+habitación+disponible+para+la+fecha+" + `${nuevaSolicitud.fechaentrada}` + "+hasta+la+fecha+" + `${nuevaSolicitud.fechasalida}` + ".+ Somos+" + `${nuevaSolicitud.huespedes}` + "+personas.+¡Muchas+gracias!+";
+let whatsappmessage =  "https://wa.me/+5492945589660?text=¡Hola!+Mi+nombre+es+" + `${nuevaSolicitud.nombre}` + ".+Quería+saber+si+tenían+habitación+disponible+para+la+fecha+" + `${nuevaSolicitud.fechaentrada}` + "+hasta+la+fecha+" + `${nuevaSolicitud.fechasalida}` + ".+ Somos+" + `${nuevaSolicitud.huespedes}` + "+personas.+¡Muchas+gracias!+";
 
 console.log(whatsappmessage)
 

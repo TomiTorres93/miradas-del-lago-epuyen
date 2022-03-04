@@ -123,7 +123,6 @@ nav {
     filter: grayscale(0.8);
 
     &:hover {
-        width: 4.5rem;
         filter: grayscale(0);    
     }
 }
@@ -618,7 +617,9 @@ background-color: #5bad76;
     filter: grayscale(0.8);
 
     &:hover {
-        filter: grayscale(0);    
+        filter: grayscale(0);   
+        border: solid 1.5px nth($color, 2);
+ 
     }
 
 }

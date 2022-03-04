@@ -27,9 +27,10 @@ header {
     transition: all 0.5s;
     font-family: 'Montserrat', sans-serif;
     cursor: pointer;
+    text-decoration: none;
 
     &:hover {
-        background-color: nth($color, 4);
+        background-color: nth($color, 8);
         color: white;
     }
 }
