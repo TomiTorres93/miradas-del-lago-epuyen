@@ -61,6 +61,46 @@ header {
 .logo-portada {
   width: 25rem;
   margin-top: 7rem;
+  transition: 0.5s all;
+}
+.logo-portada:hover {
+  animation: borderglow 10s infinite;
+  animation-name: borderglow;
+}
+@keyframes borderglow {
+  0% {
+    filter: blur(2px);
+  }
+  10% {
+    filter: blur(0px);
+  }
+  20% {
+    filter: blur(2px);
+  }
+  30% {
+    filter: blur(0px);
+  }
+  40% {
+    filter: blur(2px);
+  }
+  50% {
+    filter: blur(0px);
+  }
+  60% {
+    filter: blur(2px);
+  }
+  70% {
+    filter: blur(0px);
+  }
+  80% {
+    filter: blur(2px);
+  }
+  90% {
+    filter: blur(0px);
+  }
+  100% {
+    filter: blur(2px);
+  }
 }
 
 .whatsapp-button {
@@ -79,6 +119,10 @@ header {
 .whatsapp-button:hover {
   background-color: #447e57;
   color: white;
+}
+
+.backwa {
+  margin: 10rem 0rem 10rem 0rem;
 }
 
 /* MIXINS */
@@ -140,12 +184,15 @@ nav {
   justify-content: center;
 }
 
-.fondoverde {
-  background-color: #87a041;
+.section-lago {
+  height: 60rem;
+  padding: 3rem 10rem;
+  text-align: center;
+  justify-content: center;
 }
 
-.fondoazul {
-  background-color: #7f6b50;
+.backazul {
+  background-color: #bbe9ff;
 }
 
 .titulos {
@@ -604,6 +651,143 @@ nav div img[title]:hover::after {
   background: #2b2b2b;
 }
 
+.glow-bl-v {
+  animation: glowblv 5s infinite;
+  animation-name: glowblv;
+}
+@keyframes glowblv {
+  0% {
+    color: #02aeee;
+  }
+  10% {
+    color: #02aeee;
+  }
+  20% {
+    color: white;
+  }
+  30% {
+    color: white;
+  }
+  40% {
+    color: #02aeee;
+  }
+  50% {
+    color: #02aeee;
+  }
+  60% {
+    color: white;
+  }
+  70% {
+    color: white;
+  }
+  80% {
+    color: #02aeee;
+  }
+  90% {
+    color: #02aeee;
+  }
+  100% {
+    color: #02aeee;
+  }
+}
+
+.lagoepuyentext {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  bottom: 10rem;
+  z-index: 200;
+  padding: 0 10rem;
+}
+
+.img-logo-lago {
+  width: 2.5rem;
+  transition: all 0.5s;
+  filter: invert(100%);
+}
+
+.titulo-trip {
+  color: black;
+  font-size: 2rem;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+}
+
+.subtit-trip {
+  color: #5bad76;
+  font-size: 4rem;
+  font-weight: 100;
+  font-family: "Montserrat", sans-serif;
+}
+
+.puntaje-nro {
+  color: black;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  margin-right: 0.5rem;
+  align-items: center;
+}
+
+.exc {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.puntaje-circ {
+  color: #5bad76;
+  font-size: 1.4rem;
+  margin-left: 0.5rem;
+  letter-spacing: 0.3rem;
+  align-items: center;
+}
+
+.puntaje-circ-ch {
+  color: #5bad76;
+  font-size: 0.8rem;
+  margin-right: 1rem;
+}
+
+.puntaje-cont {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.parrafos-trip {
+  margin: 0.1rem 1rem 0.1rem 0rem;
+}
+
+.fila {
+  text-align: center;
+}
+
+.puntajes-sec {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.tripsect {
+  background-color: #f0f0f0;
+}
+
+.tripsect2 {
+  padding: 5rem 5rem;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px #d4d4d4;
+}
+
+.gris {
+  color: #d4d4d4;
+  opacity: 50%;
+}
+
 /* MIXINS */
 /*USADOS PARA LAS CLASS: DETACADO Y TITULOS*/
 /*USADOS PARA LAS CLASS: PARRAFOS Y GLOSARIO-TEXTO*/
@@ -617,7 +801,7 @@ nav div img[title]:hover::after {
   flex-wrap: wrap;
 }
 
-.navegador, .menuiconcont, .sectionwa-subtit-cont, .ff-ing-sal, .rest-img-cont {
+.navegador, .menuiconcont, .sectionwa-subtit-cont, .ff-ing-sal, .rest-img-cont, .fila {
   display: flex;
   flex-direction: row;
   align-items: center;

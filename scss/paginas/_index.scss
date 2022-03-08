@@ -40,16 +40,17 @@ nav {
     padding: 3rem 10rem; 
     text-align: center;
     justify-content: center;
-
-
 }
 
-.fondoverde {
-    background-color: nth($color, 6);
+.section-lago {
+    height: 60rem;
+    padding: 3rem 10rem; 
+    text-align: center;
+    justify-content: center;
 }
 
-.fondoazul {
-    background-color: nth($color, 5);
+.backazul {
+    background-color: #bbe9ff;
 }
 
 .columna {
@@ -637,3 +638,167 @@ background-color: #5bad76;
   
 
   
+.glow-bl-v {
+    animation: glowblv 5s infinite;
+    animation-name: glowblv;
+
+    @keyframes glowblv {
+
+        0% {
+            color: nth($color, 2);
+        }
+
+        10% {
+            color: nth($color, 2);
+        }
+
+        20% {
+            color: white;
+        }
+
+        30% {
+            color: white;
+       }
+
+        40% {
+            color: nth($color, 2);
+        }
+
+        50% {
+            color: nth($color, 2);
+       }
+        
+        60% {
+            color: white;
+        }
+
+        70% {
+            color: white;
+       }
+
+        80% {
+            color: nth($color, 2);
+        }
+
+        90% {
+            color: nth($color, 2);
+       }
+        
+        100% {
+            color: nth($color, 2);
+        }
+}
+}
+
+//////////////SECCION LAGO
+
+.lagoepuyentext {
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    bottom: 10rem;
+    z-index: 200;
+    padding: 0 10rem;
+}
+
+.img-logo-lago {
+    width: 2.5rem;
+    transition: all 0.5s;
+
+    filter: invert(100%);
+}
+
+/////TRIPADVISOR
+
+.titulo-trip {
+    color: black;
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.subtit-trip {
+    color: nth($color, 7);
+    font-size: 4rem;
+    font-weight: 100;
+    font-family: 'Montserrat', sans-serif;
+  
+}
+
+
+.puntaje-nro {
+    color: black;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 0.5rem;
+    align-items: center;
+}
+
+.exc {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.puntaje-circ {
+    color: nth($color, 7);
+    font-size: 1.4rem;
+    margin-left: 0.5rem;
+    letter-spacing: 0.3rem;
+    align-items: center;
+
+}
+
+.puntaje-circ-ch {
+    color: nth($color, 7);
+    font-size: 0.8rem;
+    margin-right: 1rem;
+
+}
+
+.puntaje-cont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.parrafos-trip {
+
+    margin: 0.1rem 1rem 0.1rem 0rem;
+}
+
+.fila {
+    @extend %flexbox-row;
+    text-align: center;
+}
+
+.columna {
+    @extend %flexbox-column;
+}
+
+.puntajes-sec {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.tripsect {
+    background-color: rgb(240, 240, 240);
+    
+}
+
+.tripsect2 {
+    padding: 5rem 5rem;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px rgb(212, 212, 212);
+
+}
+
+.gris {
+    color: rgb(212, 212, 212);
+    opacity: 50%;
+}

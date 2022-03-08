@@ -415,8 +415,8 @@ window.location.replace(whatsappmessage)
 
 
 ///////////////////////////////////////////
-///// MOUSEROVER BOTON DE WHATSAPP/////////
-//PASA EL MOUSE POR ENCIMA Y SE CAMBIA DE TEXTO A LOGO DE ENVIAR///
+///// CLICK BOTON DE WHATSAPP/////////
+//ENVIAR EL MENSAJE SE CAMBIA DE TEXTO A LOGO DE ENVIAR///
 
 
 
@@ -436,10 +436,32 @@ enviarmensaje.addEventListener('click', () => {
         wasendlogo.classList.remove('hide');
     },100)
 
+})
 
+const imglago = document.querySelector("#imglago")
+const lagoepuyentextid = document.querySelector("#lagoepuyentextid")
+
+imglago.addEventListener('mouseenter', () => {
+
+
+    setTimeout(function() { 
+
+        $("#lagoepuyentextid").fadeIn(500)    
+                lagoepuyentextid.classList.remove('hide');
+    },100)
+
+
+
+})
+
+imglago.addEventListener('mouseleave', () => {
 
 
     
 
+        $("#lagoepuyentextid").fadeOut(500)
+        setTimeout(function() {     
+                lagoepuyentextid.classList.add('hide');
+    },500)
 
 })
