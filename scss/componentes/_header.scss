@@ -92,3 +92,22 @@ header {
 margin: 10rem 0rem 10rem 0rem;
 
 }
+
+
+.cerrarmenu {
+    color: nth($color, 7);
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Roboto Slab', serif;
+    position: absolute;
+    left: 4.5rem;
+    bottom: 2rem;
+    width: 10rem;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        color: rgb(223, 92, 92);
+
+    }
+}

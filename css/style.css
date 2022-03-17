@@ -125,6 +125,22 @@ header {
   margin: 10rem 0rem 10rem 0rem;
 }
 
+.cerrarmenu {
+  color: #5bad76;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Roboto Slab", serif;
+  position: absolute;
+  left: 4.5rem;
+  bottom: 2rem;
+  width: 10rem;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.cerrarmenu:hover {
+  color: #df5c5c;
+}
+
 /* MIXINS */
 /*USADOS PARA LAS CLASS: DETACADO Y TITULOS*/
 /*USADOS PARA LAS CLASS: PARRAFOS Y GLOSARIO-TEXTO*/
@@ -515,16 +531,6 @@ nav div img[title]:hover::after {
   cursor: pointer;
 }
 
-.hide {
-  transition: all 1s;
-  display: none;
-}
-
-.show {
-  transition: all 1s;
-  display: block;
-}
-
 .sectionwa-subtit-cont {
   justify-content: center;
 }
@@ -824,6 +830,7 @@ nav div img[title]:hover::after {
   flex-direction: column;
   flex-wrap: wrap;
   text-align: left;
+  line-height: 0.9rem;
 }
 
 .tripsect {
@@ -977,6 +984,16 @@ nav div img[title]:hover::after {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.hide {
+  transition: all 1s;
+  display: none;
+}
+
+.show {
+  transition: all 1s;
+  display: block;
 }
 
 /* MIXINS */

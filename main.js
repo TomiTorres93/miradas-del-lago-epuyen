@@ -1,7 +1,7 @@
+const cerrarmenu = document.querySelector("#cerrarmenu")
+
+
 let logoportada = document.querySelector('#logoportada')
-
-
-
 
     $("#logoportada").fadeOut(10)
     $("#logoportada").fadeIn(1500)
@@ -208,7 +208,9 @@ function navaction (a) {
                 $("#menutext4").fadeOut(30)
                 $("#menutext5").fadeOut(30)
                 $("#menutext6").fadeOut(30)
-                $("#menutext7").fadeOut(30)  
+                $("#menutext7").fadeOut(30) 
+                $("#cerrarmenu").fadeOut(300)
+ 
             }      
         setTimeout(function() { 
         
@@ -224,10 +226,17 @@ function navaction (a) {
                     $("#menutext5").fadeIn(300)
                     $("#menutext6").fadeIn(300)
                     $("#menutext7").fadeIn(300)
+                    $("#cerrarmenu").fadeIn(300)
+                    
             }},100)
         }, 600)                     
         
         })
+
+
+
+ 
+           
 }
 
 
@@ -400,30 +409,84 @@ enviarmensaje.addEventListener('click', () => {
 
 })
 
-const imglago = document.querySelector("#imglago")
-const lagoepuyentextid = document.querySelector("#lagoepuyentextid")
-
-imglago.addEventListener('mouseenter', () => {
 
 
-    setTimeout(function() { 
+// TEXTO LAGO
 
-        $("#lagoepuyentextid").fadeIn(500)    
-                lagoepuyentextid.classList.remove('hide');
-    },100)
+// const imglago = document.querySelector("#imglago")
+// const lagoepuyentextid = document.querySelector("#lagoepuyentextid")
+
+// imglago.addEventListener('mouseenter', () => {
+
+
+//     setTimeout(function() { 
+
+//         $("#lagoepuyentextid").fadeIn(500)    
+//                 lagoepuyentextid.classList.remove('hide');
+//     },100)
 
 
 
-})
+// })
 
-imglago.addEventListener('mouseleave', () => {
+// imglago.addEventListener('mouseleave', () => {
 
 
     
 
-        $("#lagoepuyentextid").fadeOut(500)
-        setTimeout(function() {     
-                lagoepuyentextid.classList.add('hide');
-    },500)
+//         $("#lagoepuyentextid").fadeOut(500)
+//         setTimeout(function() {     
+//                 lagoepuyentextid.classList.add('hide');
+//     },500)
+
+// })
+
+
+
+
+
+
+/////CERRAR MENU/////////
+
+
+
+
+
+
+
+let chequearmenu = menunav.classList.contains('extrawidthnav')
+
+console.log(chequearmenu)
+
+
+cerrarmenu.addEventListener('click', function () {
+
+
+    menunav.classList.toggle('extrawidthnav');
+        
+    var width2 = $("#menunav").width()
+
+    if (width2 >= 300) {
+        $("#menutext1").fadeOut(30)
+        $("#menutext2").fadeOut(30)
+        $("#menutext3").fadeOut(30)
+        $("#menutext4").fadeOut(30)
+        $("#menutext5").fadeOut(30)
+        $("#menutext6").fadeOut(30)
+        $("#menutext7").fadeOut(30) 
+        $("#cerrarmenu").fadeOut(30)
+
+    }      
 
 })
+
+
+
+
+////EPUYÉN TEXTOS - BOTONES PARA PASAR AL SIGUIENTE PÁRRAFO
+
+
+const parrafoepuyen1 = document.querySelector("#parrafoepuyen1")
+const parrafoepuyen2 = document.querySelector("#parrafoepuyen2")
+const parrafoepuyen3 = document.querySelector("#parrafoepuyen3")
+
