@@ -241,48 +241,10 @@ let navbutton7 = navaction(menutrip)
 
 
 
-/// LEER MAS EPUYEN
-
-
-const parrafoepuyen1 = document.querySelector('#parrafoepuyen1')
-const parrafoepuyen2 = document.querySelector('#parrafoepuyen2')
-const leermasepuyen = document.querySelector('#leermasepuyen')
-const leermenosepuyen = document.querySelector('#leermenosepuyen')
 
 
 
-leermasepuyen.addEventListener('click', function () {
 
-
-    setTimeout(function() { 
-
-        $("#parrafoepuyen1").fadeIn(300)
-        $("#parrafoepuyen2").fadeIn(300)    
-        
-        parrafoepuyen1.classList.remove('hide');
-        parrafoepuyen2.classList.remove('hide');
-        leermasepuyen.classList.add('hide');
-        leermenosepuyen.classList.remove('hide');
-    },100)
-
-})
-
-
-leermenosepuyen.addEventListener('click', function () {
-
-
-    setTimeout(function() { 
-
-        $("#parrafoepuyen1").fadeOut(300)
-        $("#parrafoepuyen2").fadeOut(300)    
-        
-     
-        leermenosepuyen.classList.add('hide');
-        leermasepuyen.classList.remove('hide');
-
-    },100)
-
-})
 
 
 
