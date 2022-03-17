@@ -950,14 +950,33 @@ nav div img[title]:hover::after {
   font-size: 2rem;
   font-weight: 100;
   padding: 1rem;
+  margin: 2rem;
   font-family: "Roboto Slab", serif;
   transition: 0.5s ease-in-out;
   cursor: pointer;
   border-radius: 15px;
+  background: rgba(91, 173, 118, 0.2);
 }
 .textomenuqr:hover {
   color: #ffffff;
-  background: #5bad76;
+  background: #447e57;
+}
+
+.epuyenleermas {
+  font-size: 0.8rem;
+  padding: 1rem 2rem;
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+  color: #5bad76;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.centrar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 /* MIXINS */
