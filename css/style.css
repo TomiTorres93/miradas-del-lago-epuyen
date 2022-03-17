@@ -181,25 +181,28 @@ nav {
   height: fit-content;
   padding: 3rem 10rem;
   text-align: center;
+  display: flex;
+  align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .section-lago {
   height: 60rem;
   padding: 3rem 10rem;
   text-align: center;
-  justify-content: center;
 }
 
 .backazul {
   background-color: #bbe9ff;
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.184 20c.357-.13.72-.264 1.088-.402l1.768-.661C33.64 15.347 39.647 14 50 14c10.271 0 15.362 1.222 24.629 4.928.955.383 1.869.74 2.75 1.072h6.225c-2.51-.73-5.139-1.691-8.233-2.928C65.888 13.278 60.562 12 50 12c-10.626 0-16.855 1.397-26.66 5.063l-1.767.662c-2.475.923-4.66 1.674-6.724 2.275h6.335zm0-20C13.258 2.892 8.077 4 0 4V2c5.744 0 9.951-.574 14.85-2h6.334zM77.38 0C85.239 2.966 90.502 4 100 4V2c-6.842 0-11.386-.542-16.396-2h-6.225zM0 14c8.44 0 13.718-1.21 22.272-4.402l1.768-.661C33.64 5.347 39.647 4 50 4c10.271 0 15.362 1.222 24.629 4.928C84.112 12.722 89.438 14 100 14v-2c-10.271 0-15.362-1.222-24.629-4.928C65.888 3.278 60.562 2 50 2 39.374 2 33.145 3.397 23.34 7.063l-1.767.662C13.223 10.84 8.163 12 0 12v2z' fill='%23ffffff' fill-opacity='0.12' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
 
 .titulos {
   color: #5bad76;
   font-size: 4rem;
-  font-weight: 100;
-  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-family: "Roboto Slab", serif;
 }
 
 .parrafos {
@@ -257,14 +260,14 @@ nav {
 }
 
 .text-img-lahosteria {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto Slab", serif;
   font-size: 1.5rem;
   font-weight: 700;
   color: white;
 }
 
 .text-img-lahosteria-description {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto Slab", serif;
   font-size: 0.8rem;
   font-weight: 300;
   color: white;
@@ -298,7 +301,7 @@ nav {
   color: white;
   border-radius: 10px;
   background-color: #aac750;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto Slab", serif;
 }
 
 .navegador {
@@ -322,7 +325,7 @@ nav {
 
 .menutext {
   text-decoration: none;
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto Slab", serif;
   font-size: 1.3rem;
   margin-left: 2rem;
   font-weight: 300;
@@ -503,6 +506,7 @@ nav div img[title]:hover::after {
 
 .backverde {
   background-color: #5bad76;
+  background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23dfdfdf' fill-opacity='0.12'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 .leermas {
@@ -526,9 +530,9 @@ nav div img[title]:hover::after {
 }
 
 .input {
-  width: 20%;
+  width: 10.6rem;
   padding: 1rem;
-  margin: 1rem;
+  margin: 1rem 1rem 0rem 1rem;
   background-color: #5bad76;
   border: none;
   color: white;
@@ -537,10 +541,50 @@ nav div img[title]:hover::after {
   text-align: center;
 }
 
+.input-date {
+  width: 10.6rem;
+  padding: 0.4rem 1rem;
+  margin: 1rem 1rem 0rem 1rem;
+  background-color: #5bad76;
+  border: none;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+.input-ff {
+  width: 10.6rem;
+  padding: 0.2rem 1rem;
+  margin: 0rem 1rem;
+  background-color: #447e57;
+  border: none;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  font-size: 0.6rem;
+}
+
 .input::placeholder {
   color: #c2c2c2;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
+}
+
+.ff-ing-sal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.ff-ing-sal-text {
+  position: relative;
+  bottom: 0.5rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  color: #5bad76;
 }
 
 .wadestacado {
@@ -579,33 +623,6 @@ nav div img[title]:hover::after {
   background-color: #447e57;
 }
 
-.ff-ing-sal {
-  justify-content: center;
-}
-
-.ff-ing-sal-text {
-  position: relative;
-  bottom: 0.5rem;
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-  color: #5bad76;
-}
-
-.input-ff {
-  width: 20%;
-  padding: 0.2rem;
-  margin: 0rem 1rem;
-  position: relative;
-  bottom: 1rem;
-  background-color: #447e57;
-  border: none;
-  color: white;
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-  text-align: center;
-  font-size: 0.6rem;
-}
-
 .wasendlogo {
   width: 1.5rem;
   z-index: 100;
@@ -625,7 +642,6 @@ nav div img[title]:hover::after {
 }
 .gridimg:hover {
   filter: grayscale(0);
-  border: solid 1.5px #02aeee;
 }
 
 .gridimg2 {
@@ -640,7 +656,6 @@ nav div img[title]:hover::after {
 }
 .gridimg2:hover {
   filter: grayscale(0);
-  border: solid 1.5px #02aeee;
 }
 
 .rest-img-cont {
@@ -648,7 +663,8 @@ nav div img[title]:hover::after {
 }
 
 .backgris {
-  background: #2b2b2b;
+  background-color: #2b2b2b;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12' viewBox='0 0 20 12'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='charlie-brown' fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M9.8 12L0 2.2V.8l10 10 10-10v1.4L10.2 12h-.4zm-4 0L0 6.2V4.8L7.2 12H5.8zm8.4 0L20 6.2V4.8L12.8 12h1.4zM9.8 0l.2.2.2-.2h-.4zm-4 0L10 4.2 14.2 0h-1.4L10 2.8 7.2 0H5.8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 .glow-bl-v {
@@ -694,10 +710,10 @@ nav div img[title]:hover::after {
 .lagoepuyentext {
   font-size: 1.5rem;
   font-weight: 400;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto Slab", serif;
   position: relative;
   bottom: 10rem;
-  z-index: 200;
+  z-index: 500;
   padding: 0 10rem;
 }
 
@@ -711,21 +727,21 @@ nav div img[title]:hover::after {
   color: black;
   font-size: 2rem;
   font-weight: 800;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto Slab", serif;
 }
 
 .subtit-trip {
   color: #5bad76;
   font-size: 4rem;
   font-weight: 100;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto Slab", serif;
 }
 
 .puntaje-nro {
   color: black;
   font-size: 2rem;
   font-weight: 700;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto Slab", serif;
   margin-right: 0.5rem;
   align-items: center;
 }
@@ -819,7 +835,10 @@ nav div img[title]:hover::after {
   padding: 5rem 5rem;
   background-color: white;
   border-radius: 15px;
-  box-shadow: 2px 2px 2px #d4d4d4;
+  transition: 0.5s all;
+}
+.tripsect2:hover {
+  box-shadow: 2px 2px 10px #ebebeb;
 }
 
 .gris {
@@ -834,7 +853,7 @@ nav div img[title]:hover::after {
   color: white;
   font-size: 1.5rem;
   font-weight: 200;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto Slab", serif;
   text-decoration: none;
   transition: 0.5s ease-in-out;
   cursor: pointer;
@@ -920,10 +939,25 @@ nav div img[title]:hover::after {
   color: black;
   font-size: 4rem;
   font-weight: 600;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto Slab", serif;
   padding: 2rem;
   width: 20rem;
   border-radius: 15px;
+}
+
+.textomenuqr {
+  color: white;
+  font-size: 2rem;
+  font-weight: 100;
+  padding: 1rem;
+  font-family: "Roboto Slab", serif;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  border-radius: 15px;
+}
+.textomenuqr:hover {
+  color: #ffffff;
+  background: #5bad76;
 }
 
 /* MIXINS */
@@ -939,7 +973,7 @@ nav div img[title]:hover::after {
   flex-wrap: wrap;
 }
 
-.navegador, .menuiconcont, .sectionwa-subtit-cont, .ff-ing-sal, .rest-img-cont, .fila {
+.navegador, .menuiconcont, .sectionwa-subtit-cont, .rest-img-cont, .fila {
   display: flex;
   flex-direction: row;
   align-items: center;
