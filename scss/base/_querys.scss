@@ -51,9 +51,9 @@
         transition: 1s ease-in-out;
         background: rgb(63, 63, 63, 0%);
         width: 4.5rem;
-        height: 10%;
+        height: 20rem;
         padding: 0rem;
-        z-index: 200;
+        z-index: 600;
     }
 
 
@@ -76,8 +76,12 @@
         transform: rotate(179.9deg);
 
     } 
+    
     .logoscont {
         display: none;
+        position: fixed;
+        top: 7rem;
+        left: 5rem;
     }
 
 
@@ -93,16 +97,12 @@
         display: inline;
     }
 
-    .logoscont {
-        position: fixed;
-        top: 7rem;
-        left: 1rem;
-    }
+    
 
     .textcont {
         position: fixed;
         top: 7rem;
-        left: 4rem;
+        left: 7rem;
         
     }
 
@@ -166,7 +166,7 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        padding: 3rem 2rem; 
+        padding: 8rem 2rem; 
 
     
     }
@@ -212,5 +212,6 @@
         font-size: 1.5rem;
     }
 
- 
+
+    
  }

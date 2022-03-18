@@ -876,58 +876,6 @@ nav div img[title]:hover::after {
         box-shadow: 2px 2px 10px rgb(235, 235, 235)
 
     }
-    
-
-//     animation: bordergold 8s infinite;
-//     animation-name: bordergold;
-
-//     @keyframes bordergold {
-
-//         0% {
-//             border: 1px solid goldenrod;
-//         }
-
-//         10% {
-//             border: 1px solid gold;
-//         }
-
-//         20% {
-//             border: 1px solid goldenrod;
-            
-//                }
-
-//         30% {
-//             border: 1px solid gold;
-//        }
-
-//         40% {
-//             border: 1px solid goldenrod;
-//         }
-
-//         50% {
-//             border: 1px solid gold;
-//        }
-        
-//         60% {
-//             border: 1px solid goldenrod;
-//         }
-
-//         70% {
-//             border: 1px solid gold;
-//        }
-
-//         80% {
-//             border: 1px solid goldenrod;
-//         }
-
-//         90% {
-//             border: 1px solid gold;
-//        }
-        
-//         100% {
-//             border: 1px solid goldenrod;
-//         }
-// }
 
 }
 
@@ -1096,9 +1044,77 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 
 
+.footer5 {
+    height: fit-content;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.8rem;
+    background-color: rgb(48, 48, 48);
+    padding: 2rem;
 
+    animation: footerborder 8s infinite;
+    animation-name: footerborder;
 
+    @keyframes footerborder {
 
+        0% {
+            border-top: 2px solid #5bad76;
+        }
+
+        10% {
+            border-top: 2px solid #c7f7d7;
+       }
+
+        20% {
+            border-top: 2px solid #5bad76;
+               }
+
+        30% {
+            border-top: 2px solid #c7f7d7;
+       }
+
+        40% {
+            border-top: 2px solid #5bad76;
+        }
+
+        50% {
+            border-top: 2px solid #c7f7d7;
+       }
+        
+        60% {
+            border-top: 2px solid #5bad76;
+        }
+
+        70% {
+            border-top: 2px solid #c7f7d7;
+       }
+
+        80% {
+            border-top: 2px solid #5bad76;
+        }
+
+        90% {
+            border-top: 2px solid #c7f7d7;
+       }
+        
+        100% {
+            border-top: 2px solid #5bad76;
+        }
+}
+}
+
+.dev {
+    color: #5bad76;
+    text-decoration: none;
+    &:hover {
+        color: #447e57;
+    }
+}
 
 
 

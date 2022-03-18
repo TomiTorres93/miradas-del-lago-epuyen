@@ -998,6 +998,65 @@ nav div img[title]:hover::after {
   flex-direction: column;
 }
 
+.footer5 {
+  height: fit-content;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8rem;
+  background-color: #303030;
+  padding: 2rem;
+  animation: footerborder 8s infinite;
+  animation-name: footerborder;
+}
+@keyframes footerborder {
+  0% {
+    border-top: 2px solid #5bad76;
+  }
+  10% {
+    border-top: 2px solid #c7f7d7;
+  }
+  20% {
+    border-top: 2px solid #5bad76;
+  }
+  30% {
+    border-top: 2px solid #c7f7d7;
+  }
+  40% {
+    border-top: 2px solid #5bad76;
+  }
+  50% {
+    border-top: 2px solid #c7f7d7;
+  }
+  60% {
+    border-top: 2px solid #5bad76;
+  }
+  70% {
+    border-top: 2px solid #c7f7d7;
+  }
+  80% {
+    border-top: 2px solid #5bad76;
+  }
+  90% {
+    border-top: 2px solid #c7f7d7;
+  }
+  100% {
+    border-top: 2px solid #5bad76;
+  }
+}
+
+.dev {
+  color: #5bad76;
+  text-decoration: none;
+}
+.dev:hover {
+  color: #447e57;
+}
+
 .hide {
   transition: all 1s;
   display: none;
@@ -1080,9 +1139,9 @@ header, .columna, .puntaje-host-cont, .logoscont, .textcont {
     transition: 1s ease-in-out;
     background: rgba(63, 63, 63, 0);
     width: 4.5rem;
-    height: 10%;
+    height: 20rem;
     padding: 0rem;
-    z-index: 200;
+    z-index: 600;
   }
 
   .menuiconlogo {
@@ -1106,6 +1165,9 @@ header, .columna, .puntaje-host-cont, .logoscont, .textcont {
 
   .logoscont {
     display: none;
+    position: fixed;
+    top: 7rem;
+    left: 5rem;
   }
 
   .navegadormobile {
@@ -1119,16 +1181,10 @@ header, .columna, .puntaje-host-cont, .logoscont, .textcont {
     display: inline;
   }
 
-  .logoscont {
-    position: fixed;
-    top: 7rem;
-    left: 1rem;
-  }
-
   .textcont {
     position: fixed;
     top: 7rem;
-    left: 4rem;
+    left: 7rem;
   }
 
   .cerrarmenu {
@@ -1189,7 +1245,7 @@ header, .columna, .puntaje-host-cont, .logoscont, .textcont {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 3rem 2rem;
+    padding: 8rem 2rem;
   }
 
   .lagoepuyentext {
