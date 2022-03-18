@@ -12,7 +12,7 @@
     }
  }
 
- @media only screen and (min-width: 600px) and  (max-width: 1200px) {
+ @media only screen and (min-width: 801px) and  (max-width: 1200px) {
 
     .seccion-nietos {
 
@@ -22,378 +22,189 @@
  }
 
 
- @media only screen and (min-width: 100px) and  (max-width: 600px) {
-
-body {
+ @media only screen and (min-width: 100px) and  (max-width: 800px) {
 
     .none-mobile {
         display: none !important;
     }
-}
-    .detalle-text {
-        font-family: 'Raleway', sans-serif;
-        font-size: 0.7rem;
-        margin: 10px;
-        padding: 0rem 1rem;
+
+    ::-webkit-scrollbar {
+        display: none;
+     }
+
+    .section {
+        height: fit-content;
+        padding: 3rem 2rem; 
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
+   
+    .navegador {
+        @extend %flexbox-row;
+        position: fixed;
+        transition: 1s ease-in-out;
+        background: rgb(63, 63, 63, 0%);
+        width: 4.5rem;
+        height: 10%;
+        padding: 0rem;
+        z-index: 200;
+    }
+
+
+    .menuiconlogo {
+        display: none;
+    }
+
+    .menuiconlogo2 {
+        display: block;
+        width: 2rem;
+        position: fixed;
+        left: 1rem;
+        top: 1rem;
+        cursor: pointer;
+        transition: 1s ease-in-out;
+    }
+
+    .menuiconlogo2click {
+        filter: invert(100%);
+        transform: rotate(179.9deg);
+
+    } 
+    .logoscont {
+        display: none;
+    }
+
+
+    .navegadormobile {
+        background: rgb(63, 63, 63);
+        height: 50rem;
+        width: 100%;
+        transition: 1s ease-in-out;
+
+    }
+
+    .show {
+        display: inline;
+    }
+
+    .logoscont {
+        position: fixed;
+        top: 7rem;
+        left: 1rem;
+    }
+
+    .textcont {
+        position: fixed;
+        top: 7rem;
+        left: 4rem;
+        
+    }
+
+
+    .cerrarmenu {
+        display: none;
+    }
+
 
     .titulos {
         font-size: 2rem;
-        padding: 0rem 1rem;
     }
 
-    .parrafo {
-        padding: 5%;
+    .parrafos {
+        font-size: 1rem;
+        padding: 0rem;
     }
 
-  .titulo-portada {
-    font-size: 3rem;
-    margin-top: 7rem;
-    padding: 0 0.5rem;
-    font-weight: 900;
+    .logo-portada {
+        width: 70%;
+        margin-top: 12rem;
+    }
 
-  }
-
-  .titulo {
-      font-size: 2rem;
-      padding: 0;
-  }
-
-  header {
-    height: 750px;
-}
-
-.calendario {
-    width: 5rem;
-}
-
-.seccion-blanca {
+    .rest-img-cont{
     display: flex;
     align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    text-align: center;
-    height: 1000px;
-    padding: 0 3%;
-}
-
-.seccion-blanca-luchadoras {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    text-align: center;
     justify-content: center;
-    height: fit-content;
-    padding: 100px 5%;
-}
-
-.seccion-blanca-ll {
-    display: flex;
-    align-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
-    text-align: center;
-    height: fit-content;
-    padding: 50px 3%;
-}
-
-.seccion-foto-1 {
-    text-align: center;
-    height: 550px;
-    background-position:left;
-    background-size: cover;
-}
-
-.recuadro {
-    width: 90%;
-    font-size: 0.95rem;
-    padding: 5%;
-    color: white;
-    background-color: nth($color, 3);
-}
-
-.urna {
-    width: 4rem;
-}
-
-.pie {
-    width: 250px;
-    height: 250px;
-    background-image: conic-gradient(
-    #db7b7b 51.75%, 
-    #8abbcf 51.75% 91.91%, 
-    #649173 91.91% 94.24%, 
-    #292929 94.24% 95.43%,
-    #a390bd 95.43% 96.15%,
-    #b6b6b6 96.15% 100% );
-    border-radius: 50%;
-    margin: 1rem;
-  }
-
-  .datos {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    text-align: center;
-    width: 90%;
-    margin-left: 0rem;
-
-  }
-
-  .kkkk {
-      font-size: 1rem;
-  }
-  .yyy {
-      text-align: center;
-  }
-.seccion-blanca-madres {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
-    height: 1200px;
-    padding: 0% 5%;
-}
-
-.extraheight {
-    height: 1750px;
-
-}
-
-.revextraheight {
-    height: 1200px;
-}
-
-.botonmadabue {
-    margin: 0.5rem 2rem;
-}
-
-
-.panuelomadres {
-    margin: 1rem 1rem;
-    width: 4rem;
-    cursor: pointer;
-
-}
-
-
-.madretestpar {
-   font-size: 1rem;
-}
-
-.extraheight {
-    height: 1450px;
-
-}
-
-.revextraheight {
-    height: 900px;
-}
-
-
-.seccion-blanca-organismos {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
-    height: fit-content;
-    padding: 50px 5%;
-    background-color: white;
-    color: nth($color, 1);
-}
-
-.imgorganismosddhh {
-    width: 10rem;
-    margin: 0.5rem;
-
-}
-
-.seccion-color-elec {
-    height: fit-content;
-    padding: 50px 5%;
-}
-
-.ucr {
-    font-family: 'Raleway', sans-serif;
-    width: 80%;
-    font-weight: 600;
-    font-size: 1.2rem;
-    padding: 0.2rem 0.5rem;
-}
-.pj {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-  font-size: 1.2rem;
-  padding: 0.2rem 0.5rem;
-  width: 80%;
-
-  }
-
-.pi {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-  font-size: 1.2rem;
-  padding: 0.2rem 0.5rem;
-  width: 80%;
-
-}
-
-.mid {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-  font-size: 1.2rem;
-  padding: 0.2rem 0.5rem;
-  width: 80%;
-
-}
-
-.af {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-  font-size: 1.2rem;
-  padding: 0.2rem 0.5rem;
-  width: 80%;
-
-}
-
-.otros {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-  font-size: 1.2rem;
-  padding: 0.2rem 0.5rem;
-  width: 80%;
-
-}
-
-.seccion-foto-urna {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    height: 470px;
-    background-position: left;
-    background-size: cover;
-}
-
-.titulo2 {
-    font-size: 2rem;
-    filter: drop-shadow(3px 3px nth($color, 3));
-}
-
-.recmob {
-    position: relative;
-    right: 3rem;
-}
-
-.bigger {
-    font-size: 1.1rem;
     }
 
-.carousel {
-    width: 90%;
-}    
-
-.carousel-caption {
-    font-size: 1rem;
-    text-shadow: 5px 5px 5px black;
-}
-
-.lower {
-    font-size: 1.7rem;
+    .whatsapp-button {
+        font-size: 0.8rem;
     }
 
-.subtit {
-    font-size: 1.5rem;
-}    
+    .logowhatsapp {
+        width: 0.8rem;
+    }
 
-.rondacont {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 0px 0px;
-}
+    .gridimg {
+        width: 80%;
+    }
 
-.rondagif {
-    width: 15rem;
-    filter: drop-shadow(1px 1px 250px #74668a);
-}
+    .gridimg2 {
+        width: 80%;
 
+    }
 
+    .textomenuqr {
+        font-size: 1rem;
+    }
 
-.seccion-nietos {
-    padding: 100px 5% 0 5%;
-    height: fit-content;
-}
+    .imggrande {
+        width: 90%;
+        height: 15rem;
+    }
 
-.tt {
-    height: fit-content;
-    padding: 100px 5%;
-}
+    .section-lago {
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 3rem 2rem; 
 
-.rondarecuadro {
-    width: 80%;
-}
+    
+    }
 
-.seccion-foto-madres {
+    .lagoepuyentext {
+        font-size: 1rem;
+        font-weight: 400;
+        font-family: 'Roboto Slab', serif;
+        position: relative;
+        bottom: 0rem;
+        z-index: 500;
+        padding: 0rem;
+    }
+    
+    .img-logo-lago {
+        width: 1.5rem;
+    }
 
-    height: fit-content;
-    padding: 100px 0;
-   
-}
+    .tripsect2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
 
-.glosario-cont {
-    margin-top: 2rem;
-    padding: 0;
-}
+    .fila {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
 
-.parrafo-quiz {
-    font-size: 1.3rem;
+    .puntajes-sec {
+        margin-top: 3rem;
+    }
 
-}
+    .subtit-trip {
+        font-size: 3rem;
+        margin-top: 2rem;
+    }
 
-.detalle-text2 {
-    font-size: 0.8rem;
-}
-
-.size1 {
-    font-size: 1.1rem;
-}
-
-.glosario-card {
-    width: 42%;
-    text-align: center;
-    margin: 0.2rem 0.5rem;
-}
-
-.glosarioadd {
-    width: 90%;
-}
-
-.fila {        
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.footer-2 {
-    padding: 0% 5%;
-}
-
-.navegador {
-    top: 60%;
-    left: 90%;
-
-}
-
-nav a[title]:hover::after {
-    left: -700%;
-  }
-}
+    .titulo-trip {
+        font-size: 1.5rem;
+    }
+ }

@@ -55,12 +55,14 @@
 
 <nav class="navegador" id="menunav">
   <img class="menuiconlogo" src="images\logo-miradas-del-lago-white.png" alt="">
+  <img class="menuiconlogo2" id="menumobile" src="images\menumobile.png" alt="">
+
 
     <p  id="cerrarmenu" class="cerrarmenu hide">Cerrar ⤬</p>    
 
   <div class="menuiconcont">
 
-   <div class="logoscont">
+   <div class="logoscont" id="logoscont">
     <div class="menutextcont">
       <img class="menuicon" id="menuhotel" src="images\menuhotel.png" alt="">
     </div>
@@ -97,7 +99,7 @@
     
   </div>
 
-  <div class="textcont">
+  <div class="textcont" id="textcont">
    <a href="#lahosteria"> <p class="menutext" id="menutext1"> La Hostería </p></a>
    <a href="#sectionepuyen"> <p class="menutext" id="menutext3"> Epuyén </p></a>
    <a href="#sectionhabitaciones"> <p class="menutext" id="menutext2"> Las habitaciones </p></a>
@@ -144,7 +146,7 @@
 
 
 
-<div class="img-lahosteria-cont">
+<div class="img-lahosteria-cont none-mobile">
 
   <div>
     <img class="img-logo-lahosteria " src="images\hojas2.png" alt="">
@@ -230,10 +232,10 @@
   <section class="section" id="sectionhabitaciones">
     <p class="titulos"> Nuestras habitaciones </p>
 
-    <div class="parrafos">
-     <p> La localidad de <b>Epuyén</b> fue fundada el 1º de septiembre de 1908. El nombre de Epuyén significa “Dos que van” debido a los dos arroyos que recorren la localidad para desembocar en el río Epuyén, nacido del lago de mismo nombre. </p>
+    <div >
+     <p class="parrafos"> La localidad de <b>Epuyén</b> fue fundada el 1º de septiembre de 1908. El nombre de Epuyén significa “Dos que van” debido a los dos arroyos que recorren la localidad para desembocar en el río Epuyén, nacido del lago de mismo nombre. </p>
 
-<div class="img-lahosteria-cont">
+<div class="img-lahosteria-cont none-mobile">
 
   <div>
     <img id="galeriahab1" class="img-habitaciones img-inact" src="images\habitacion1.png" alt="lahosteria2">
@@ -304,14 +306,20 @@
 
       <img src="images\tripadvisor.png" alt="">
       <p class="subtit-trip">Tripadvisor</p>
-      <p class="gris">________________________________________________________________________________________________________</p>
+      <p class="gris none-mobile">________________________________________________________________________________________________________</p>
+
+      <p class="gris none-desktop">__________________________________ </p>
 
       <p class="titulo-trip">N.° 1 en Epuyén</p>
       <p class="puntaje-nro">5,0 <br> <span class="excelente"> ¡Excelente! </span> <span class="puntaje-circ">  <br>  ⬤⬤⬤⬤⬤</span></p>
+
+
+
       <div class="fila">
-      <div class="columna col-6">
- 
-        
+
+      <div class="columna col-xl-6 col-sm-12">
+         
+        <!-- PUNTAJES -->
         <div>
           <p><b>N.° 1 de 7</b> alojamientos especiales en Epuyén</p>
           <div class="puntajes-sec">
@@ -324,15 +332,14 @@
       </div>
     
 
-      <div class="columna col-6">
- 
-        
+      <div class="columna col-xl-6 col-sm-12">     
         <div>
           <div class="puntajes-sec">
           <a href="https://www.tripadvisor.com.ar/Hotel_Review-g4463182-d15143630-Reviews-Hosteria_Miradas_del_Lago-Epuyen_Province_of_Chubut_Patagonia.html" target="_blank" class="botonvermas">VER MÁS ›››</a>          
         </div>
         </div>
       </div>
+
 
       </div>
     </div>

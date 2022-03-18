@@ -490,3 +490,54 @@ const parrafoepuyen1 = document.querySelector("#parrafoepuyen1")
 const parrafoepuyen2 = document.querySelector("#parrafoepuyen2")
 const parrafoepuyen3 = document.querySelector("#parrafoepuyen3")
 
+
+
+
+////MENU MOBILE 
+
+const menumobile = document.querySelector("#menumobile")
+const logoscont = document.querySelector("#logoscont")
+const textcont = document.querySelector("#textcont")
+
+
+menumobile.addEventListener('click', function () {
+
+    let chequearhidemenu = menunav.classList.contains('hide')
+
+    menumobile.classList.toggle('menuiconlogo2click')
+    menunav.classList.toggle('navegadormobile');
+    
+
+var width2 = $("#menunav").width()
+        
+if (width2 >= 300) {
+    $("#menutext1").fadeOut(30)
+    $("#menutext2").fadeOut(30)
+    $("#menutext3").fadeOut(30)
+    $("#menutext4").fadeOut(30)
+    $("#menutext5").fadeOut(30)
+    $("#menutext6").fadeOut(30)
+    $("#menutext7").fadeOut(30)
+    logoscont.classList.remove('show'); 
+
+}      
+setTimeout(function() { 
+
+var width = $("#menunav").width()
+console.log(width)
+
+setTimeout(function() { 
+    if (width >= 260) {
+        $("#menutext1").fadeIn(300)
+        $("#menutext2").fadeIn(300)
+        $("#menutext3").fadeIn(300)
+        $("#menutext4").fadeIn(300)
+        $("#menutext5").fadeIn(300)
+        $("#menutext6").fadeIn(300)
+        $("#menutext7").fadeIn(300)
+        logoscont.classList.add('show');
+        
+}},100)
+}, 600)                     
+
+})
