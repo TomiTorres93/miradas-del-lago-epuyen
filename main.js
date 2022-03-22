@@ -444,6 +444,16 @@ let navbutton7 = navaction(menutrip)
 
 
 
+// GOOGLE MAPS
+
+const googlemaptoggle = document.querySelector('#googlemaptoggle')
+const mapa = document.querySelector('#mapa')
+
+
+googlemaptoggle.addEventListener('click', function () {
+        mapa.classList.toggle('hide');
+      })
+
 
 
 

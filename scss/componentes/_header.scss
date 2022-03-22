@@ -88,6 +88,50 @@ header {
 }
 
 
+// IMAGENES
+
+.logowhatsapp {
+    width: 1.2rem;
+}
+
+
+.mapa {
+
+    width: 1.2rem;
+    
+}
+
+.googlemaps {
+    position: absolute;
+    top: 4rem;
+    right: 3.5rem;
+    transition: ease-in-out 1s;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px grey;
+}
+
+
+.mapatext {
+    color: black;
+    font-weight: 800;
+    transition: all 0.5s;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+    position: absolute;
+    right: 20rem;
+    top: 1rem;
+    padding: 0.5rem;
+    border-radius: 15px;
+    background:none;
+    border: none;
+
+    &:hover {
+        background-color: nth($color, 8);
+        color: white;
+    }
+}
+
 .backwa {
 margin: 10rem 0rem 10rem 0rem;
 

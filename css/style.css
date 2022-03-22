@@ -121,6 +121,43 @@ header {
   color: white;
 }
 
+.logowhatsapp {
+  width: 1.2rem;
+}
+
+.mapa {
+  width: 1.2rem;
+}
+
+.googlemaps {
+  position: absolute;
+  top: 4rem;
+  right: 3.5rem;
+  transition: ease-in-out 1s;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px grey;
+}
+
+.mapatext {
+  color: black;
+  font-weight: 800;
+  transition: all 0.5s;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  text-decoration: none;
+  position: absolute;
+  right: 20rem;
+  top: 1rem;
+  padding: 0.5rem;
+  border-radius: 15px;
+  background: none;
+  border: none;
+}
+.mapatext:hover {
+  background-color: #447e57;
+  color: white;
+}
+
 .backwa {
   margin: 10rem 0rem 10rem 0rem;
 }
@@ -499,10 +536,6 @@ nav div img[title]:hover::after {
     position: relative;
     bottom: 0.3rem;
   }
-}
-
-.logowhatsapp {
-  width: 1.2rem;
 }
 
 .fadegreen {
@@ -1073,6 +1106,12 @@ nav div img[title]:hover::after {
   color: #447e57;
 }
 
+.textochico {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8rem;
+}
+
 .hide {
   transition: all 1s;
   display: none;
@@ -1318,6 +1357,34 @@ header, .columna, .puntaje-host-cont, .logoscont, .textcont {
 
   .titulo-trip {
     font-size: 1.5rem;
+  }
+
+  .mapa {
+    width: 1rem;
+  }
+
+  .googlemaps {
+    position: absolute;
+    top: 8rem;
+    right: 1rem;
+    transition: ease-in-out 1s;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px grey;
+    width: 90%;
+  }
+
+  .mapatext {
+    right: 1rem;
+    top: 3rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    background: none;
+    border: none;
+    font-size: 0.8rem;
+  }
+  .mapatext:hover {
+    background-color: #447e57;
+    color: white;
   }
 }
 

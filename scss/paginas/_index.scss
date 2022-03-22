@@ -424,12 +424,6 @@ nav div img[title]:hover::after {
 
 
 
-// IMAGENES
-
-.logowhatsapp {
-    width: 1.2rem;
-}
-
 
 
 // EFECTOS
@@ -1128,6 +1122,13 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     &:hover {
         color: #447e57;
     }
+}
+
+
+.textochico {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.8rem;
 }
 
 
