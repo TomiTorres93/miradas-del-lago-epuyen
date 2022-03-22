@@ -142,14 +142,28 @@
     }
 
     .gridimg {
-        width: 100%;
-        margin: 0.2rem;
+        height: 10rem;
+        margin: 0rem;
+        filter: grayscale(0);
+
     }
 
     .gridimg2 {
-        width: 100%;
-        margin: 0.2rem;
+        height: 10rem;
+        margin: 0rem;
+        filter: grayscale(0);
+
     }
+
+    .carousel-item{
+        height: 25rem;
+    } 
+    .carousel-item img{
+        height: 25rem;
+        object-fit: cover;
+
+    }
+  
 
     .textomenuqr {
         font-size: 1rem;
@@ -179,6 +193,10 @@
         bottom: 0rem;
         z-index: 500;
         padding: 0rem;
+    }
+
+    .img-inact {
+        filter: grayscale(0);
     }
     
     .img-logo-lago {

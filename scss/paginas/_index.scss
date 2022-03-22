@@ -487,27 +487,30 @@ nav div img[title]:hover::after {
 
 }
 
-
+.wapadding {
+    padding: 15rem 0rem;
+}
 
 .input {
     width: 10.6rem;
     padding: 1rem;
     margin: 1rem 1rem 0rem 1rem;
-    background-color: #5bad76;
+    background-color: white;
     border: none;
-    color: white;
+    color: #5bad76;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     text-align: center;
+
 }
 
 .input-date {
     width: 10.6rem;
     padding: 0.4rem 1rem;
     margin: 1rem 1rem 0rem 1rem;
-    background-color: #5bad76;
+    background-color: white;
     border: none;
-    color: white;
+    color: #5bad76;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     text-align: center;
@@ -577,9 +580,9 @@ nav div img[title]:hover::after {
     width: 10rem;
     padding: 1rem;
     margin: 3rem 1rem 1rem 1rem;
-    background-color: #5bad76;
+    background-color: white;
     font-size: 1rem;
-    color: white;
+    color: #5bad76;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     text-decoration: none;
@@ -588,7 +591,7 @@ nav div img[title]:hover::after {
 
     &:hover {
         background-color: #447e57;
-
+        color: white;
     }
 
 }
@@ -1001,22 +1004,21 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 .textomenuqr {
+    padding: 1.3rem;
+    background-color:#5bad76;
+    border-radius: 15px;
     color: white;
-    font-size: 2rem;
-    font-weight: 100;
-    padding: 1rem;
-    margin: 2rem;
-    font-family: 'Roboto Slab', serif;
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin-bottom: 3rem;
+    font-family: 'Roboto Slab', serif;    
+    text-decoration: none;
     transition: 0.5s ease-in-out;
     cursor: pointer;
-    border-radius: 15px;
-    background: rgb(91, 173, 118, 20%);
-
-
     &:hover {
-        color:#ffffff;
-        background: #447e57;
-
+        color: rgb(233, 233, 233);
+        box-shadow: 5px 5px #447e57;
+  
     }
 }
 
