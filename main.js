@@ -247,7 +247,122 @@ console.log(galeriahab5check)
 })
 
 
+//////// GALERÍA DE IMÁGENES - RESTAURANT ////////
+const galeriares1 = document.querySelector('#galeriares1')
+const galeriares2 = document.querySelector('#galeriares2')
+const galeriares3 = document.querySelector('#galeriares3')
+const galeriares4 = document.querySelector('#galeriares4')
+const galeriares5 = document.querySelector('#galeriares5')
 
+
+galeriares1.addEventListener('click', function () {
+
+  let galeriares1check = galeriares1.classList.contains('img-inact')
+  let galeriares2check = galeriares2.classList.contains('img-inact')
+  let galeriares3check = galeriares3.classList.contains('img-inact')
+  let galeriares4check = galeriares4.classList.contains('img-inact')
+  let galeriares5check = galeriares5.classList.contains('img-inact')
+console.log(galeriares1check)
+console.log(galeriares2check)
+console.log(galeriares3check)
+console.log(galeriares4check)
+console.log(galeriares5check)
+ if (galeriares1check == true) {
+     galeriares1.classList.remove('img-inact');
+     galeriares2.classList.add('img-inact');
+     galeriares3.classList.add('img-inact');
+     galeriares4.classList.add('img-inact');
+     galeriares5.classList.add('img-inact');
+ }
+})
+
+galeriares2.addEventListener('click', function () {
+
+  let galeriares1check = galeriares1.classList.contains('img-inact')
+  let galeriares2check = galeriares2.classList.contains('img-inact')
+  let galeriares3check = galeriares3.classList.contains('img-inact')
+  let galeriares4check = galeriares4.classList.contains('img-inact')
+  let galeriares5check = galeriares5.classList.contains('img-inact')
+console.log(galeriares1check)
+console.log(galeriares2check)
+console.log(galeriares3check)
+console.log(galeriares4check)
+console.log(galeriares5check)
+ if (galeriares2check == true) {
+     galeriares2.classList.remove('img-inact');
+     galeriares1.classList.add('img-inact');
+     galeriares3.classList.add('img-inact');
+     galeriares4.classList.add('img-inact');
+     galeriares5.classList.add('img-inact');
+ }
+})
+
+
+galeriares3.addEventListener('click', function () {
+
+  let galeriares1check = galeriares1.classList.contains('img-inact')
+  let galeriares2check = galeriares2.classList.contains('img-inact')
+  let galeriares3check = galeriares3.classList.contains('img-inact')
+  let galeriares4check = galeriares4.classList.contains('img-inact')
+  let galeriares5check = galeriares5.classList.contains('img-inact')
+console.log(galeriares1check)
+console.log(galeriares2check)
+console.log(galeriares3check)
+console.log(galeriares4check)
+console.log(galeriares5check)
+ if (galeriares3check == true) {
+     galeriares3.classList.remove('img-inact');
+     galeriares2.classList.add('img-inact');
+     galeriares1.classList.add('img-inact');
+     galeriares4.classList.add('img-inact');
+     galeriares5.classList.add('img-inact');
+ }
+})
+
+
+galeriares4.addEventListener('click', function () {
+
+  let galeriares1check = galeriares1.classList.contains('img-inact')
+  let galeriares2check = galeriares2.classList.contains('img-inact')
+  let galeriares3check = galeriares3.classList.contains('img-inact')
+  let galeriares4check = galeriares4.classList.contains('img-inact')
+  let galeriares5check = galeriares5.classList.contains('img-inact')
+console.log(galeriares1check)
+console.log(galeriares2check)
+console.log(galeriares3check)
+console.log(galeriares4check)
+console.log(galeriares5check)
+ if (galeriares4check == true) {
+     galeriares4.classList.remove('img-inact');
+     galeriares2.classList.add('img-inact');
+     galeriares3.classList.add('img-inact');
+     galeriares1.classList.add('img-inact');
+     galeriares5.classList.add('img-inact');
+ }
+})
+
+
+galeriares5.addEventListener('click', function () {
+
+  let galeriares1check = galeriares1.classList.contains('img-inact')
+  let galeriares2check = galeriares2.classList.contains('img-inact')
+  let galeriares3check = galeriares3.classList.contains('img-inact')
+  let galeriares4check = galeriares4.classList.contains('img-inact')
+  let galeriares5check = galeriares5.classList.contains('img-inact')
+console.log(galeriares1check)
+console.log(galeriares2check)
+console.log(galeriares3check)
+console.log(galeriares4check)
+console.log(galeriares5check)
+ if (galeriares5check == true) {
+     galeriares5.classList.remove('img-inact');
+     galeriares2.classList.add('img-inact');
+     galeriares3.classList.add('img-inact');
+     galeriares4.classList.add('img-inact');
+     galeriares1.classList.add('img-inact');
+ }
+})
+  
 
 
 ////////// MENU

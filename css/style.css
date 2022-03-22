@@ -174,7 +174,7 @@ header {
   width: 10px;
 }
 * ::-webkit-scrollbar-thumb {
-  background: #0094dc;
+  background: #5bad76;
   border-radius: 8px;
 }
 * ::-webkit-scrollbar-track {
@@ -204,7 +204,7 @@ nav {
 }
 
 .section-lago {
-  height: 60rem;
+  height: fit-content;
   padding: 3rem 10rem;
   text-align: center;
 }
@@ -243,6 +243,16 @@ nav {
   object-fit: cover;
   cursor: pointer;
   filter: drop-shadow(5px 5px 10px #c5c5c5);
+  transition: 0.5s ease-in-out;
+}
+
+.img-resto {
+  width: 40rem;
+  height: 30rem;
+  margin: 2rem 1rem;
+  border-radius: 25px;
+  object-fit: cover;
+  cursor: pointer;
   transition: 0.5s ease-in-out;
 }
 
@@ -725,9 +735,9 @@ nav div img[title]:hover::after {
 .lagoepuyentext {
   font-size: 1.5rem;
   font-weight: 400;
-  font-family: "Roboto Slab", serif;
   position: relative;
   bottom: 10rem;
+  font-family: "Roboto Slab", serif;
   z-index: 500;
   padding: 0 10rem;
 }
