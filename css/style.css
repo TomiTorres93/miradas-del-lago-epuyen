@@ -103,14 +103,30 @@ header {
   }
 }
 
-.whatsapp-button {
+.redes {
+  display: flex;
+  flex-direction: row;
   position: absolute;
   right: 1rem;
   top: 1rem;
+}
+
+.redes2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  position: absolute;
+  right: 1.2rem;
+  top: 4rem;
+}
+
+.whatsapp-button {
   padding: 0.5rem;
   color: black;
   border-radius: 10px;
   font-weight: 800;
+  margin-left: 0.5rem;
   transition: all 0.5s;
   font-family: "Montserrat", sans-serif;
   cursor: pointer;
@@ -125,14 +141,18 @@ header {
   width: 1.2rem;
 }
 
+.ubicacioncont {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  flex-direction: row;
+}
+
 .mapa {
   width: 1.2rem;
 }
 
 .googlemaps {
-  position: absolute;
-  top: 4rem;
-  right: 3.5rem;
   transition: ease-in-out 1s;
   border-radius: 10px;
   box-shadow: 2px 2px 10px grey;
@@ -145,17 +165,26 @@ header {
   font-family: "Montserrat", sans-serif;
   cursor: pointer;
   text-decoration: none;
-  position: absolute;
-  right: 20rem;
-  top: 1rem;
   padding: 0.5rem;
-  border-radius: 15px;
+  border-radius: 10px;
   background: none;
   border: none;
 }
 .mapatext:hover {
   background-color: #447e57;
   color: white;
+}
+
+.facebook {
+  width: 2.5rem;
+  margin-left: 0.5rem;
+  transition: all 0.5s;
+  border-radius: 10px;
+  padding: 0.3rem;
+  cursor: pointer;
+}
+.facebook:hover {
+  background-color: #447e57;
 }
 
 .backwa {
@@ -206,6 +235,7 @@ header {
 * {
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 * ::-webkit-scrollbar {
   width: 10px;
@@ -1200,10 +1230,6 @@ header, .columna, .puntaje-host-cont, .logoscont, .textcont {
   }
 }
 @media only screen and (min-width: 100px) and (max-width: 800px) {
-  body {
-    overflow-x: hidden;
-  }
-
   .none-mobile {
     display: none !important;
   }
@@ -1226,10 +1252,14 @@ header, .columna, .puntaje-host-cont, .logoscont, .textcont {
     position: fixed;
     transition: 1s ease-in-out;
     background: rgba(63, 63, 63, 0);
-    width: 4.5rem;
     height: 20rem;
     padding: 0rem;
     z-index: 600;
+  }
+
+  .extrawidthnav {
+    width: 100%;
+    box-shadow: none;
   }
 
   .menuiconlogo {
@@ -1445,6 +1475,23 @@ header, .columna, .puntaje-host-cont, .logoscont, .textcont {
     object-fit: cover;
     margin-top: 2rem;
     border-radius: 300px;
+  }
+
+  .redes {
+    display: flex;
+    flex-direction: column;
+    text-align: right !important;
+    top: 1rem;
+  }
+
+  .redes2 {
+    top: 5.3rem;
+    right: 1.1rem;
+  }
+
+  .facebook {
+    margin-left: 0.1rem;
+    width: 2rem;
   }
 }
 

@@ -68,14 +68,33 @@ header {
     }
 }
 
-.whatsapp-button {
+.redes {
+    display: flex;
+
+    flex-direction: row;
     position: absolute;
     right: 1rem;
     top: 1rem;
+}
+
+.redes2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    position: absolute;
+    right: 1.2rem;
+    top: 4rem;
+}
+
+
+.whatsapp-button {
+
     padding: 0.5rem;
     color: black;
     border-radius: 10px;
     font-weight: 800;
+    margin-left: 0.5rem;
     transition: all 0.5s;
     font-family: 'Montserrat', sans-serif;
     cursor: pointer;
@@ -88,12 +107,22 @@ header {
 }
 
 
+
+
+
 // IMAGENES
 
 .logowhatsapp {
     width: 1.2rem;
 }
 
+
+.ubicacioncont {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    flex-direction: row;
+}
 
 .mapa {
 
@@ -102,14 +131,11 @@ header {
 }
 
 .googlemaps {
-    position: absolute;
-    top: 4rem;
-    right: 3.5rem;
+   
     transition: ease-in-out 1s;
     border-radius: 10px;
     box-shadow: 2px 2px 10px grey;
 }
-
 
 .mapatext {
     color: black;
@@ -118,17 +144,29 @@ header {
     font-family: 'Montserrat', sans-serif;
     cursor: pointer;
     text-decoration: none;
-    position: absolute;
-    right: 20rem;
-    top: 1rem;
+
     padding: 0.5rem;
-    border-radius: 15px;
+    border-radius: 10px;
     background:none;
     border: none;
 
     &:hover {
         background-color: nth($color, 8);
         color: white;
+    }
+}
+
+.facebook {
+    width: 2.5rem;
+    margin-left: 0.5rem;
+    transition: all 0.5s;
+    border-radius: 10px;
+    padding: 0.3rem;
+    cursor: pointer;
+
+
+    &:hover {
+        background-color: nth($color, 8);
     }
 }
 
@@ -154,4 +192,6 @@ margin: 10rem 0rem 10rem 0rem;
         color: rgb(223, 92, 92);
 
     }
+
+    
 }

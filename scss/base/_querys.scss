@@ -24,9 +24,7 @@
 
  @media only screen and (min-width: 100px) and  (max-width: 800px) {
 
-    body {
-        overflow-x: hidden;
-    }
+  
     .none-mobile {
         display: none !important;
     }
@@ -50,13 +48,15 @@
         position: fixed;
         transition: 1s ease-in-out;
         background: rgb(63, 63, 63, 0%);
-        width: 4.5rem;
         height: 20rem;
         padding: 0rem;
         z-index: 600;
     }
 
-
+    .extrawidthnav {
+        width: 100%;
+        box-shadow: none;
+    }
     .menuiconlogo {
         display: none;
     }
@@ -289,4 +289,23 @@
         margin-top: 2rem;
         border-radius: 300px;
         }
+
+    .redes {
+        display: flex;
+        flex-direction: column;
+        text-align: right !important;
+        top: 1rem;
+    }
+
+    .redes2 {
+        top: 5.3rem;
+        right: 1.1rem;
+
+
+    }
+
+    .facebook {
+        margin-left: 0.1rem;
+        width: 2rem;
+    }
  }
