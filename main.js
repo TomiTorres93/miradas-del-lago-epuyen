@@ -745,3 +745,17 @@ setTimeout(function() {
 }, 600)                     
 
 })
+
+
+
+
+$(document).ready(function() {
+
+
+    $("#carouselExampleIndicators2").owlCarousel();
+  
+  });
+
+$('.carouselExampleIndicators2').carousel({
+    interval: 2000
+  })
