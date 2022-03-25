@@ -326,7 +326,6 @@ nav {
   border-radius: 25px;
   object-fit: cover;
   cursor: pointer;
-  filter: drop-shadow(5px 5px 10px #c5c5c5);
   transition: 0.5s ease-in-out;
 }
 
@@ -347,7 +346,6 @@ nav {
   border-radius: 25px;
   object-fit: cover;
   cursor: pointer;
-  filter: drop-shadow(5px 5px 10px #c5c5c5);
   transition: 0.5s ease-in-out;
 }
 
@@ -1522,6 +1520,41 @@ header, .columna, .puntaje-host-cont, .logoscont, .textcont {
   .facebook {
     margin-left: 0.1rem;
     width: 2rem;
+  }
+
+  .img-lahosteria-cont {
+    flex-direction: column;
+  }
+
+  .img-resto {
+    width: 90%;
+    height: 25rem;
+    margin: 0.2rem 1rem;
+    border-radius: 10px;
+  }
+
+  .img-habitaciones {
+    width: 90%;
+    height: 25rem;
+    margin: 0.2rem 1rem;
+    border-radius: 10px;
+  }
+
+  .img-lahosteria {
+    width: 90%;
+    height: 25rem;
+    margin: 0.2rem 1rem;
+    border-radius: 10px;
+  }
+
+  .img-inact {
+    width: 90%;
+    height: 3rem;
+    border-radius: 10px;
+    filter: grayscale(0.8);
+  }
+  .img-inact:hover {
+    filter: grayscale(0);
   }
 }
 

@@ -322,4 +322,47 @@
         margin-left: 0.1rem;
         width: 2rem;
     }
+
+
+    //GALERIA
+
+    .img-lahosteria-cont {
+        flex-direction: column;
+    
+    }
+
+
+    .img-resto {
+        width: 90%;
+        height: 25rem;
+        margin: 0.2rem 1rem;
+        border-radius: 10px;
+
+    }
+.img-habitaciones {
+    width: 90%;
+    height: 25rem;
+    margin: 0.2rem 1rem;
+    border-radius: 10px;
+
+}
+
+.img-lahosteria {
+    width: 90%;
+    height: 25rem;
+    margin: 0.2rem 1rem;
+    border-radius: 10px;
+}
+    .img-inact {
+        width: 90%;
+        height: 3rem;
+        border-radius: 10px;
+
+        filter: grayscale(0.8);
+    
+        &:hover {
+            filter: grayscale(0);    
+        }
+    }
+
  }

@@ -92,7 +92,6 @@ background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox
     display: flex;
     justify-content: center;
 
-
 }
 
 .img-lahosteria {
@@ -102,8 +101,6 @@ background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox
     border-radius: 25px;
     object-fit: cover;
     cursor: pointer;
-
-    filter: drop-shadow(5px 5px 10px rgb(197, 197, 197));
 
     transition: 0.5s ease-in-out;
 
@@ -118,8 +115,6 @@ background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox
     object-fit: cover;
     cursor: pointer;
     transition: 0.5s ease-in-out;
-
-
 }
 
 .img-habitaciones {
@@ -130,7 +125,6 @@ background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox
     object-fit: cover;
     cursor: pointer;
 
-    filter: drop-shadow(5px 5px 10px rgb(197, 197, 197));
 
     transition: 0.5s ease-in-out;
 
