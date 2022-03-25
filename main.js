@@ -455,11 +455,13 @@ const flashtextmap = document.querySelector('#flashtextmap')
 
 googlemaptoggle.addEventListener('click', function () {
 
-
+    let chequearflash = flashtextmap.classList.contains('hide')
         mapa.classList.toggle('hide');
-        flashtextmap.classList.remove('hide');
+        flashtextmap.classList.toggle('hide');
+        
 
-
+console.log(chequearflash)
+    if (chequearflash == true) {
         setTimeout(function() { 
             $("#flashtextmap").fadeIn(500)
         }, 100)   
@@ -467,8 +469,9 @@ googlemaptoggle.addEventListener('click', function () {
         
         setTimeout(function() { 
             $("#flashtextmap").fadeOut(500)
-        }, 2000)           
-      })
+        }, 2000)   
+
+      }})
 
   
 
