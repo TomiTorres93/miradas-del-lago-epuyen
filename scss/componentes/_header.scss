@@ -131,10 +131,28 @@ header {
 }
 
 .googlemaps {
-   
+    position: fixed;
+    top: 4rem;
+    right: 7rem;
     transition: ease-in-out 1s;
     border-radius: 10px;
     box-shadow: 2px 2px 10px grey;
+    width: 25rem;
+    height: 25rem;
+
+}
+
+    
+.flashtextmap {
+    position: absolute;
+    top: 1.2rem;
+    right: 28rem;
+    color: grey;
+    background-color: rgb(255, 255, 255, 50%);
+    border-radius: 10px;
+    padding: 0.3rem;
+    font-size: 0.6rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .mapatext {

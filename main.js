@@ -448,18 +448,27 @@ let navbutton7 = navaction(menutrip)
 
 const googlemaptoggle = document.querySelector('#googlemaptoggle')
 const mapa = document.querySelector('#mapa')
+const flashtextmap = document.querySelector('#flashtextmap')
+
+
 
 
 googlemaptoggle.addEventListener('click', function () {
+
+
         mapa.classList.toggle('hide');
+        flashtextmap.classList.remove('hide');
+
+
+        setTimeout(function() { 
+            $("#flashtextmap").fadeIn(500)
+        }, 100)   
+
+        
+        setTimeout(function() { 
+            $("#flashtextmap").fadeOut(500)
+        }, 2000)           
       })
-
-
-
-
-
-
-
 
   
 
@@ -747,15 +756,3 @@ setTimeout(function() {
 })
 
 
-
-
-$(document).ready(function() {
-
-
-    $("#carouselExampleIndicators2").owlCarousel();
-  
-  });
-
-$('.carouselExampleIndicators2').carousel({
-    interval: 2000
-  })
