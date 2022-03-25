@@ -59,6 +59,8 @@
     }
     .menuiconlogo {
         display: none;
+        display: flex;
+        align-self: flex-start;
     }
 
     .menuiconlogo2 {

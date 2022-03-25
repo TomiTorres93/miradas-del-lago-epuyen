@@ -1279,6 +1279,8 @@ header, .columna, .puntaje-host-cont, .logoscont, .textcont {
 
   .menuiconlogo {
     display: none;
+    display: flex;
+    align-self: flex-start;
   }
 
   .menuiconlogo2 {
