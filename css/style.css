@@ -1288,6 +1288,17 @@ header, .columna, .puntaje-host-cont, .logoscont, .textcont {
     height: 2.6rem;
   }
 
+  .menuicontrip {
+    width: 2.6rem;
+    height: 2.6rem;
+  }
+
+  .estrellas {
+    font-size: 0.8rem;
+    left: 0rem;
+    bottom: 0.8rem !important;
+  }
+
   .menuiconlogo2 {
     display: block;
     width: 2rem;
@@ -1497,7 +1508,7 @@ header, .columna, .puntaje-host-cont, .logoscont, .textcont {
 
   .videopablito {
     width: 95%;
-    height: 10rem;
+    height: 13rem;
   }
 
   .pablitologo {
@@ -1517,6 +1528,11 @@ header, .columna, .puntaje-host-cont, .logoscont, .textcont {
     flex-direction: column;
     text-align: right !important;
     top: 1rem;
+  }
+
+  .ubicacioncont {
+    display: flex;
+    text-align: right !important;
   }
 
   .redes2 {
