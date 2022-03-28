@@ -291,7 +291,7 @@ color: white;
 }
 
 .menuicontrip {
-    width: 2.6rem;
+    width: 2.4rem;
     margin-bottom: 1rem;
     transition: all 0.5s;
     cursor: pointer;
@@ -1156,6 +1156,15 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     color: #5bad76;
     background-color: white;
     border-radius: 15px;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+
+
+    &:hover {
+    color: #5bad76;
+        box-shadow: -5px -5px #447e57 inset;
+
+    }
 }
 
 

@@ -374,6 +374,7 @@ const menurestaurant = document.querySelector('#menurestaurant')
 const menulago = document.querySelector('#menulago')
 const menuhosteria = document.querySelector('#menuhosteria')
 const menutrip = document.querySelector('#menutrip')
+const menugoogle = document.querySelector('#menugoogle')
 
 
 const menunav = document.querySelector('#menunav')
@@ -385,6 +386,8 @@ const menutext4 = document.querySelector('#menutext4')
 const menutext5 = document.querySelector('#menutext5')
 const menutext6 = document.querySelector('#menutext6')
 const menutext7 = document.querySelector('#menutext7')
+const menutext8 = document.querySelector('#menutext8')
+
 
 
 var width = $("#menunav").width()
@@ -403,6 +406,7 @@ function navaction (a) {
                 $("#menutext5").fadeOut(30)
                 $("#menutext6").fadeOut(30)
                 $("#menutext7").fadeOut(30) 
+                $("#menutext8").fadeOut(30) 
                 $("#cerrarmenu").fadeOut(300)
  
             }      
@@ -420,17 +424,14 @@ function navaction (a) {
                     $("#menutext5").fadeIn(300)
                     $("#menutext6").fadeIn(300)
                     $("#menutext7").fadeIn(300)
+                    $("#menutext8").fadeIn(300)
+                    $("#textcont").fadeIn(300)
                     $("#cerrarmenu").fadeIn(300)
                     
             }},100)
         }, 600)                     
-        
-        })
-
-
-
- 
-           
+    
+        })           
 }
 
 
@@ -441,6 +442,39 @@ let navbutton4 = navaction(menurestaurant)
 let navbutton5 = navaction(menulago)
 let navbutton6 = navaction(menuhosteria)
 let navbutton7 = navaction(menutrip)
+let navbutton8 = navaction(menugoogle)
+
+
+// CERRAR EL MENU AL CLICKEAR EN UNA OPCIÓN
+
+function cerrarmenumobile (a) {
+    a.addEventListener('click', function () {  
+        const textcont = document.querySelector('#textcont')
+        const menunav = document.querySelector('#menunav')
+
+        menunav.classList.remove('extrawidthnav');
+        menunav.classList.remove('navegadormobile');
+        menumobile.classList.toggle('menuiconlogo2click')
+
+    
+        $("#textcont").fadeOut(30)
+        $("#cerrarmenu").fadeOut(30)
+
+        if (screenwidth <= 800) {
+        $("#logoscont").fadeOut(30)
+    }
+}
+     ) }
+
+let cerrarmenu1 = cerrarmenumobile (menutext1)
+let cerrarmenu2 = cerrarmenumobile (menutext2)
+let cerrarmenu3 = cerrarmenumobile (menutext3)
+let cerrarmenu4 = cerrarmenumobile (menutext4)
+let cerrarmenu5 = cerrarmenumobile (menutext5)
+let cerrarmenu6 = cerrarmenumobile (menutext6)
+let cerrarmenu7 = cerrarmenumobile (menutext7)
+let cerrarmenu8 = cerrarmenumobile (menutext8)
+
 
 
 
@@ -627,48 +661,10 @@ enviarmensaje.addEventListener('click', () => {
 
 
 
-// TEXTO LAGO
-
-// const imglago = document.querySelector("#imglago")
-// const lagoepuyentextid = document.querySelector("#lagoepuyentextid")
-
-// imglago.addEventListener('mouseenter', () => {
-
-
-//     setTimeout(function() { 
-
-//         $("#lagoepuyentextid").fadeIn(500)    
-//                 lagoepuyentextid.classList.remove('hide');
-//     },100)
-
-
-
-// })
-
-// imglago.addEventListener('mouseleave', () => {
-
-
-    
-
-//         $("#lagoepuyentextid").fadeOut(500)
-//         setTimeout(function() {     
-//                 lagoepuyentextid.classList.add('hide');
-//     },500)
-
-// })
-
-
-
 
 
 
 /////CERRAR MENU/////////
-
-
-
-
-
-
 
 let chequearmenu = menunav.classList.contains('extrawidthnav')
 
@@ -690,6 +686,7 @@ cerrarmenu.addEventListener('click', function () {
         $("#menutext5").fadeOut(30)
         $("#menutext6").fadeOut(30)
         $("#menutext7").fadeOut(30) 
+        $("#menutext8").fadeOut(30) 
         $("#cerrarmenu").fadeOut(30)
 
     }      
@@ -716,6 +713,9 @@ const logoscont = document.querySelector("#logoscont")
 const textcont = document.querySelector("#textcont")
 
 
+const screenwidth = window.screen.width;
+console.log (screenwidth)
+
 menumobile.addEventListener('click', function () {
 
     let chequearhidemenu = menunav.classList.contains('hide')
@@ -734,9 +734,14 @@ if (width2 >= 300) {
     $("#menutext5").fadeOut(30)
     $("#menutext6").fadeOut(30)
     $("#menutext7").fadeOut(30)
+    $("#menutext8").fadeOut(30)
+    $("#textcont").fadeOut(30)
+    $("#logoscont").fadeOut(30)
     logoscont.classList.remove('show'); 
+}
 
-}      
+
+
 setTimeout(function() { 
 
 var width = $("#menunav").width()
@@ -751,11 +756,16 @@ setTimeout(function() {
         $("#menutext5").fadeIn(300)
         $("#menutext6").fadeIn(300)
         $("#menutext7").fadeIn(300)
+        $("#menutext8").fadeIn(300)
+        $("#logoscont").fadeIn(300)
+        $("#textcont").fadeIn(300)
         logoscont.classList.add('show');
         
 }},100)
-}, 600)                     
+}, 630)                     
 
 })
+
+
 
 
