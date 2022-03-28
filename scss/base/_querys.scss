@@ -227,7 +227,8 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        padding: 5rem 2rem;
+        padding: 5rem 1rem;
+        width: 100%;
 
     }
 
@@ -389,4 +390,17 @@
         }
     }
 
+    .botonvermasgoogle {
+    font-size: 0.8rem;
+    }
+
+    .parrafos-google {
+        font-size: 0.8rem;
+    }
+
+    .comentario-cont {
+        width: 100%;
+        padding: 1rem;
+
+    }
  }
